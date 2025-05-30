@@ -1,10 +1,12 @@
+import * as SC from './Navigation.styled';
+
 export default function Navigation() {
-    return <div>
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Product</li>
-            <li>Servises</li>
-        </ul>
-    </div>
+    return <SC.Navigation>
+        <SC.NavList>
+            <SC.NavItem>Home</SC.NavItem>
+            <SC.NavItem>About</SC.NavItem>
+            <SC.NavItem>Product</SC.NavItem>
+            <SC.NavItem>Servies</SC.NavItem>
+        </SC.NavList>
+    </SC.Navigation>
 }
