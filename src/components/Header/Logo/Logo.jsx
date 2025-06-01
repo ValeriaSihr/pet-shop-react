@@ -1,7 +1,9 @@
+
 export default function Logo() {
     return (
         <div>
-            <img src="" alt="The Wild Kingdom" />
+            {/* насунути на хедер і перенести в хіро */}
+            <h1>The wild kingdom</h1>
         </div>
     )
 }

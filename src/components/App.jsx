@@ -1,4 +1,5 @@
-import Header from "./Header/Header"
+import AboutUs from "./AboutUs/AboutUs"
+import Header from "./Header/Header";
 
 
 function App() {
@@ -6,7 +7,8 @@ function App() {
 
   return (
     <>
-      <Header/>
+      <Header />
+      <AboutUs/>
       
       
     </>
