@@ -1,12 +1,15 @@
-import svg from "../../../img/cart.svg"
+import * as SC from "./Cart.styled.js";
+import Svg from "../../../img/cart.svg"
+
+
 
 
 export default function Cart() {
     return (
-        <div>
-            <p>Cart</p>
-            <span>0</span>
-            <img src={svg} alt="shoping cart" />
-        </div>
+        <SC.Cart>
+            <SC.CartImage src={Svg} alt="cart icon" />
+            <SC.CartText>Cart</SC.CartText>
+            <SC.CartCount>0</SC.CartCount>            
+        </SC.Cart>
     )
 }

@@ -1,3 +1,10 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
 :root {
   --color-primary-brand: #9D875C;
   --font-color: #C1AB81;

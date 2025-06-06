@@ -1,7 +1,9 @@
+import * as SC from './Button.styled'
+
 export default function Button() {
     return (
-        <button>
+        <SC.HeadderButton>
             Contact
-        </button>
+        </SC.HeadderButton>
     )
 }

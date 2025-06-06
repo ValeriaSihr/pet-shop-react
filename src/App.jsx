@@ -1,6 +1,7 @@
 import AboutUs from "./components/AboutUs/AboutUs"
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
+import "keen-slider/keen-slider.min.css";
 
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
   return (
     <>
       <Header />
-      <Hero/>
+      <Hero />
       <AboutUs/>
       
       

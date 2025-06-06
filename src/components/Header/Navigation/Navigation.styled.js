@@ -4,13 +4,14 @@ export const Navigation = styled.nav`
      display: flex;
      align-items: center;
      justify-content: space-between;
-     width: 100%;
+     
   
 `;
 
 export const NavList = styled.ul`
 
-display: flex;
+    display: flex;
+    gap: 20px;
     list-style: none;
     padding: 0;
     margin: 0;  
@@ -19,6 +20,6 @@ display: flex;
 
 export const NavItem = styled.li`
 
-margin-right: 20px;
+
       
 `;
