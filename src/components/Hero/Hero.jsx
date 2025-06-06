@@ -3,7 +3,11 @@ import Pet1 from '../../img/hero_big_dog.png';
 import Pet2 from '../../img/hero_cat1.png';
 import Pet3 from '../../img/hero_dog1.png';
 import Pet4 from '../../img/hero_cat2.png';
+import Left from '../../img/arrow-left.svg';
+import Right from '../../img/arrow-right.svg';
 import 'keen-slider/keen-slider.min.css';
+import * as SC from "./Hero.styled" 
+
 
 
 export default function Hero() {
@@ -20,7 +24,7 @@ export default function Hero() {
         {src: Pet4},
     ]    
 
-    return <section>
+    return <SC.HeroSection>
 
         <p>A better world for pets</p>
         <div ref={sliderRef} className="keen-slider">
@@ -32,10 +36,10 @@ export default function Hero() {
         </div>
 
         <button onClick={() => slider.current?.prev()}>
-        <img src="../../img/arrow-left.svg" alt="Prev" />
+        <img src={Left} alt="Prev" />
       </button>
       <button onClick={() => slider.current?.next()}>
-        <img src="../../img/arrow-right.svg" alt="Next" />
+        <img src={Right} alt="Next" />
       </button>
-    </section>
+    </SC.HeroSection>
 }
