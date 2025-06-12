@@ -7,13 +7,14 @@ import Left from '../../img/arrow-left.svg';
 import Right from '../../img/arrow-right.svg';
 import 'keen-slider/keen-slider.min.css';
 import * as SC from "./Hero.styled" 
+import Container from '../Container/Container';
 
 
 
 export default function Hero() {
     const [sliderRef, slider] = useKeenSlider({
         loop: true,
-        slidesPerView: 1,
+        slidesPerView: 4,
         spacing: 15,
     })
     
@@ -25,7 +26,7 @@ export default function Hero() {
     ]    
 
     return <SC.HeroSection>
-
+        <Container>
         <p>A better world for pets</p>
         <div ref={sliderRef} className="keen-slider">
         {images.map((src, idx) => (
@@ -41,5 +42,6 @@ export default function Hero() {
       <button onClick={() => slider.current?.next()}>
         <img src={Right} alt="Next" />
       </button>
+      </Container>
     </SC.HeroSection>
 }
