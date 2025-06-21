@@ -1,7 +1,7 @@
 import { useKeenSlider } from 'keen-slider/react';
 import Pet1 from '../../img/hero_big_dog.png';
 import Pet2 from '../../img/hero_cat1.png';
-import Pet3 from '../../img/hero_dog1.png';
+import Pet3 from '../../img/hero_dog1_copy.png';
 import Pet4 from '../../img/hero_cat2.png';
 import Left from '../../img/arrow-left.svg';
 import Right from '../../img/arrow-right.svg';
@@ -15,7 +15,7 @@ export default function Hero() {
     const [sliderRef, slider] = useKeenSlider({
         loop: true,
         slidesPerView: 4,
-        spacing: 15,
+      spacing: 15,
     })
     
     const images = [
@@ -27,7 +27,7 @@ export default function Hero() {
 
     return <SC.HeroSection>
         <Container>
-        <p>A better world for pets</p>
+        <SC.HeroParagraph>A better world for pets</SC.HeroParagraph>
         <div ref={sliderRef} className="keen-slider">
         {images.map((src, idx) => (
           <div key={idx} className="keen-slider__slide">

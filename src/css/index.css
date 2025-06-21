@@ -67,3 +67,13 @@ body {
   flex-grow: 1;
 } */
 
+.keen-slider{
+right: 20%;
+/* justify-content: center;
+align-items: center; */
+
+}
+
+.keen-slider__slide img{
+  width: 400px;
+}
