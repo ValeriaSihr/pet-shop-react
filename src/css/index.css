@@ -50,7 +50,7 @@ img {
 body {
   display: flex;
   flex-direction: column;
-  background-color: linear-gradient(0deg, rgba(245, 210, 149, 0.5), rgba(238, 240, 238, 0.5));
+  background-color: rgb(245, 245, 220);
   font-family: "Italiana", "Montserrat", sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -90,4 +90,8 @@ body {
   object-fit: cover;
   border: 1px solid var(--color-primary-brand);
   padding: 8px;
+}
+
+.bgr-img{
+  background-color: url(../img/golden-glitter-background.png);
 }
