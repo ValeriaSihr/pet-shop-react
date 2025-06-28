@@ -7,11 +7,12 @@ color: var(--color-primary-brand);
 `;
 
 export const HeroParagraph = styled.p`
-position: relative;
-top: 20%;
+position: absolute;
+top: 40%;
 z-index: 1;
 font-size: 70px;
 text-transform: capitalize;
+width: 440px;
 
 `;
 

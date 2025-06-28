@@ -1,8 +1,12 @@
 import { useKeenSlider } from 'keen-slider/react';
-import Pet1 from '../../img/hero_big_dog.png';
-import Pet2 from '../../img/hero_cat1.png';
-import Pet3 from '../../img/hero_dog1_copy.png';
-import Pet4 from '../../img/hero_cat2.png';
+
+import Pet1 from '../../img/black-doggo-hero.jpg';
+import Pet2 from '../../img/cat-with-blue-eyes-hero.avif';
+import Pet3 from '../../img/dog-black-hero.avif';
+import Pet4 from '../../img/french-bulldog-hero.webp';
+import Pet5 from '../../img/hero-dog-edit.jpg';
+import Pet6 from '../../img/Hero-cat-edit.jpg';
+import Pet7 from '../../img/Hero-dog-edit1.jpg';
 import Left from '../../img/arrow-left.svg';
 import Right from '../../img/arrow-right.svg';
 import 'keen-slider/keen-slider.min.css';
@@ -12,36 +16,69 @@ import Container from '../Container/Container';
 
 
 export default function Hero() {
-    const [sliderRef, slider] = useKeenSlider({
-        loop: true,
-        slidesPerView: 4,
-      spacing: 15,
-    })
-    
-    const images = [
-        {src: Pet1},
-        {src: Pet2},
-        {src: Pet3},
-        {src: Pet4},
-    ]    
+  const [sliderRef] = useKeenSlider({
+    loop: true,
+  },
+    [(slider) => {
+      let timeout;
+      let mouseOver = false;
+      function clearNextTimeout() {
+        clearTimeout(timeout);
+      }
+      function nextTimeout() {
+        clearTimeout(timeout);
+        if (mouseOver) return;
+        timeout = setTimeout(() => {
+          slider.next()
+        },2000)
+      }
+      slider.on("created", () => {
+        slider.container.addEventListener("mouseover", () => {
+          mouseOver = true;
+          clearNextTimeout();
+        })
+        slider.container.addEventListener("mouseout", () => {
+          mouseOver = false;
+          nextTimeout()
+        })
+        nextTimeout()
+      })
+      slider.on("dragStarted", clearNextTimeout);
+      slider.on("animationEnded", nextTimeout);
+      slider.on("updated", nextTimeout);
+    },
+    ]
+  )
 
     return <SC.HeroSection>
         <Container>
         <SC.HeroParagraph>A better world for pets</SC.HeroParagraph>
         <div ref={sliderRef} className="keen-slider">
-        {images.map((src, idx) => (
-          <div key={idx} className="keen-slider__slide">
-            <img src={src.src} alt={`Pet ${idx + 1}`} />
+          <div className="keen-slider__slide">
+            <img className="round-img" src={Pet1} alt="Black dog" />
           </div>
-        ))}
+          <div className="keen-slider__slide">
+            <img className="round-img" src={Pet2} alt="Cat with blue eyes" />
+          </div>
+          <div className="keen-slider__slide">
+            <img className="round-img" src={Pet3} alt="Black dog" />
+          </div>
+          <div className="keen-slider__slide">
+            <img className="round-img" src={Pet4} alt="French bulldog" />
+          </div>
+          <div className="keen-slider__slide">
+            <img className="round-img" src={Pet5} alt="Dog" />
+          </div>
+          <div className="keen-slider__slide">
+            <img className="round-img" src={Pet6} alt="Cat" />
+          </div>
+          <div className="keen-slider__slide">
+            <img className="round-img" src={Pet7} alt="Dog" />
+          </div>
+       
         </div>
 
-        <button onClick={() => slider.current?.prev()}>
-        <img src={Left} alt="Prev" />
-      </button>
-      <button onClick={() => slider.current?.next()}>
-        <img src={Right} alt="Next" />
-      </button>
+      
       </Container>
     </SC.HeroSection>
 }

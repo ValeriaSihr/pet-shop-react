@@ -67,13 +67,27 @@ body {
   flex-grow: 1;
 } */
 
-.keen-slider{
-right: 20%;
-/* justify-content: center;
-align-items: center; */
-
+.keen-slider__slide {
+  flex: 0 0 calc((100% - 45px) / 4); /* 3 відступи по 15px */
+  margin-right: 15px;
+  margin-bottom: 156px;
 }
 
-.keen-slider__slide img{
-  width: 400px;
+.keen-slider__slide:last-child {
+  margin-right: 0;
+}
+
+.keen-slider__slide{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.round-img {
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border: 1px solid var(--color-primary-brand);
+  padding: 8px;
 }
