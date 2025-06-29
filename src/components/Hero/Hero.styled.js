@@ -8,7 +8,8 @@ color: var(--color-primary-brand);
 
 export const HeroParagraph = styled.p`
 position: absolute;
-top: 40%;
+top: 100%;
+left: 10%;
 z-index: 1;
 font-size: 70px;
 text-transform: capitalize;

@@ -7,8 +7,7 @@ import Pet4 from '../../img/french-bulldog-hero.webp';
 import Pet5 from '../../img/hero-dog-edit.jpg';
 import Pet6 from '../../img/Hero-cat-edit.jpg';
 import Pet7 from '../../img/Hero-dog-edit1.jpg';
-import Left from '../../img/arrow-left.svg';
-import Right from '../../img/arrow-right.svg';
+
 import 'keen-slider/keen-slider.min.css';
 import * as SC from "./Hero.styled" 
 import Container from '../Container/Container';

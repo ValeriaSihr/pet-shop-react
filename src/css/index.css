@@ -63,14 +63,13 @@ body {
 
 }
 
-/* main {
-  flex-grow: 1;
-} */
 
 .keen-slider__slide {
-  flex: 0 0 calc((100% - 45px) / 4); /* 3 відступи по 15px */
-  margin-right: 15px;
   margin-bottom: 156px;
+  top: 20px;
+  left: 35%
+  
+
 }
 
 .keen-slider__slide:last-child {
@@ -92,6 +91,3 @@ body {
   padding: 8px;
 }
 
-.bgr-img{
-  background-color: url(../img/golden-glitter-background.png);
-}
