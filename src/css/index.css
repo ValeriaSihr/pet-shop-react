@@ -67,7 +67,7 @@ body {
 .keen-slider__slide {
   margin-bottom: 156px;
   top: 20px;
-  left: 35%
+  left: 33%
   
 
 }
@@ -80,6 +80,10 @@ body {
   width: 100%;
   object-fit: cover;
   border-radius: 12px;
+ transform: translateX(-50%);
+  transition: transform 0.1s ease;
+  
+  
 }
 
 .round-img {
@@ -89,5 +93,7 @@ body {
   object-fit: cover;
   border: 1px solid var(--color-primary-brand);
   padding: 8px;
+  box-shadow: 0 2px 5px 5px rgba(0, 0, 0, 0.027);
+  
 }
 

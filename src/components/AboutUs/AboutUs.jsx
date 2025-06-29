@@ -2,10 +2,11 @@ import Food from "../../img/food.svg?react";
 import Care from "../../img/care.svg?react";
 import Accessories from "../../img/accessories.svg?react"
 import Yorik from "../../img/york.jpg";
+import * as SC from "./AboutUs.styled"
 
 export default function AboutUs() {
     return (
-        <section>
+        <SC.AboutUsSection>
             <img src={Yorik} alt="Yorcshire" />
             <div>
                 <h2>About Us</h2>
@@ -19,6 +20,6 @@ export default function AboutUs() {
                 <li><Care/></li>
                 <li><Accessories/></li>
             </ul>
-     </section>
+     </SC.AboutUsSection>
  )   
 }

@@ -29,7 +29,7 @@ export default function Hero() {
         if (mouseOver) return;
         timeout = setTimeout(() => {
           slider.next()
-        },2000)
+        },2500)
       }
       slider.on("created", () => {
         slider.container.addEventListener("mouseover", () => {
@@ -72,7 +72,7 @@ export default function Hero() {
             <img className="round-img" src={Pet6} alt="Cat" />
           </div>
           <div className="keen-slider__slide">
-            <img className="round-img" src={Pet7} alt="Dog" />
+            <img className="round-img" src={Pet7} alt="Puppy" />
           </div>
        
         </div>

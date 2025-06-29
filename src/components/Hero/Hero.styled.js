@@ -3,12 +3,12 @@ import styled from "styled-components";
 
 export const HeroSection = styled.section`
 color: var(--color-primary-brand);
-
+margin-bottom: 167px;
 `;
 
 export const HeroParagraph = styled.p`
 position: absolute;
-top: 100%;
+top: 50%;
 left: 10%;
 z-index: 1;
 font-size: 70px;
