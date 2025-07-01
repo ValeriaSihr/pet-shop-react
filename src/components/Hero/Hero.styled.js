@@ -11,7 +11,7 @@ position: absolute;
 top: 50%;
 left: 10%;
 z-index: 1;
-font-size: 70px;
+font-size: 4.375rem;
 text-transform: capitalize;
 width: 440px;
 

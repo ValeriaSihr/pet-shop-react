@@ -8,6 +8,18 @@ import DogToy from "../../img/toy.jpg"
 import Bone from "../../img/threats.jpg"
 import DogBowls from "../../img/two_bowls.jpg"
 
+const products = [
+    { id: 1, src: Bed, title: "Luxury pet bed", price: 120, alt: "Luxury bed" },
+    { id: 2, src: CatFood, title: "Cat food", price: 20, alt: "Cat food" },
+    { id: 3, src: DogFood, title: "Dog food", price: 30, alt: "Dog food" },
+    { id: 4, src: Treats, title: "Treat for dog", price: 60, alt: "Treat for dog" },
+    { id: 5, src: CatToy, title: "Scratching toy for cat", price: 200, alt: "scratching toy for cat" },
+    { id: 6, src: DogToy, title: "Teddy bear for dog", price: 80, alt: "Teddy bear for dog" },
+    { id: 7, src: Bone, title: "Treats Knot Bone", price: 8, alt: "Treats Knot Bone" },
+    { id: 8, src: DogBowls, title: "Dog bowls", price: 120, alt: "Dog bowls" },
+]
+
+
 export default function Products() {
     return <section>
         <div>
@@ -17,39 +29,15 @@ export default function Products() {
         </div>
         <div>
             <ul>
-                <li><img src={Bed} alt="Luxury bed" />
-                    <h4>Luxury pet bed</h4>
-                    <p>120$</p>
+                {products.map(({ id, src, title, price, alt }) => (
+                <li key={id}>
+                    <img src={src} alt={alt} />
+                    <h4>{title}</h4>
+                    <p>{price} $</p>
                     <Star/>
                 </li>
-                <li><img src={CatFood} alt="Cat food" />
-                    <h4>Luxury pet bed</h4>
-                    <p>20$</p>
-                    <Star/></li>
-                <li><img src={DogFood} alt="Dog food" />
-                    <h4>Dog food</h4>
-                    <p>30$</p>
-                    <Star/></li>
-                <li><img src={Treats} alt="Treat for dog" />
-                    <h4>Treat for dog</h4>
-                    <p>60$</p>
-                    <Star/></li>
-                <li><img src={CatToy} alt="scratching toy for cat" />
-                    <h4>Scratching toy for cat</h4>
-                    <p>200$</p>
-                    <Star/></li>
-                <li><img src={DogToy} alt="Teddy bear for dog" />
-                    <h4>Teddy bear for dog</h4>
-                    <p>80$</p>
-                    <Star/></li>
-                <li><img src={Bone} alt="Treats Knot Bone" />
-                    <h4>Treats Knot Bone</h4>
-                    <p>8$</p>
-                    <Star/></li>
-                <li><img src={DogBowls} alt="dog bowls" />
-                    <h4>Dog bowls</h4>
-                    <p>120$</p>
-                    <Star/></li>
+                ))}
+                
             </ul>
         </div>
         <button type="submit">Explore</button>
