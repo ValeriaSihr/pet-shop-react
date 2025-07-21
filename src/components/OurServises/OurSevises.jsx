@@ -29,7 +29,7 @@ export default function OurServices() {
                         <li key={id}>
                             <img src={src} alt={alt} />
                             <p>{text}</p>
-                            <SvgBtn/>
+                            <button type="button"><SvgBtn/></button>
                         </li>
                     ))}
                 </ul>

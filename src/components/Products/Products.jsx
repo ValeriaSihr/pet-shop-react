@@ -6,19 +6,20 @@ import Treats from "../../img/snack.jpg"
 import CatToy from "../../img/playing_cat.jpg"
 import DogToy from "../../img/toy.jpg"
 import Bone from "../../img/threats.jpg"
-import DogBowls from "../../img/two_bowls.jpg"
+import DogBowls from "../../img/water_bowl.jpg"
+import products from "../../products.json"
 
-const products = [
-    { id: 1, src: Bed, title: "Luxury pet bed", price: 120, alt: "Luxury bed" },
-    { id: 2, src: CatFood, title: "Cat food", price: 20, alt: "Cat food" },
-    { id: 3, src: DogFood, title: "Dog food", price: 30, alt: "Dog food" },
-    { id: 4, src: Treats, title: "Treat for dog", price: 60, alt: "Treat for dog" },
-    { id: 5, src: CatToy, title: "Scratching toy for cat", price: 200, alt: "scratching toy for cat" },
-    { id: 6, src: DogToy, title: "Teddy bear for dog", price: 80, alt: "Teddy bear for dog" },
-    { id: 7, src: Bone, title: "Treats Knot Bone", price: 8, alt: "Treats Knot Bone" },
-    { id: 8, src: DogBowls, title: "Dog bowls", price: 120, alt: "Dog bowls" },
-]
 
+const images = {
+    Bed,
+    CatFood,
+    DogFood,
+    Treats,
+    CatToy,
+    DogToy,
+    Bone,
+    DogBowls,
+ }
 
 export default function Products() {
     return <section>
@@ -31,7 +32,7 @@ export default function Products() {
             <ul>
                 {products.map(({ id, src, title, price, alt }) => (
                 <li key={id}>
-                    <img src={src} alt={alt} />
+                    <img src={images[src]} alt={alt} />
                     <h4>{title}</h4>
                     <p>{price} $</p>
                     <Star/>

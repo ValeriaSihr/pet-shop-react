@@ -5,6 +5,7 @@ import "keen-slider/keen-slider.min.css";
 import { HeroWrapper } from "./components/Hero/HeroWrapper.styled";
 import Products from "./components/Products/Products";
 import OurServices from "./components/OurServises/OurSevises";
+import Contact from "./components/Contact/Contact";
 
 
 function App() {
@@ -18,7 +19,8 @@ function App() {
      </HeroWrapper>
       <AboutUs />
       <Products />
-      <OurServices/>
+      <OurServices />
+      <Contact/>
 
       
       
