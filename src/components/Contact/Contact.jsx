@@ -10,9 +10,9 @@ import Location from "../../img/geo-alt-fill.svg?react"
 import WorkingHours from "../../img/clock-fill.svg?react"
 
 const pairedSlider = [
-    { slide1: Pet1, slide2: Pet2 },
-    { slide1: Pet3, slide2: Pet4 },
-    { slide1: Pet5, slide2: Pet6 },
+    { slide1: Pet1, slide2: Pet2, alt1:"Siam cat", alt2: "Flufy shpitz" },
+    { slide1: Pet3, slide2: Pet4, alt1: "Chinchilla", alt2: "Two dogs and blanket" },
+    { slide1: Pet5, slide2: Pet6, alt1: "Fennec fox", alt2: "Mother cat" },
     
 ]
 
@@ -23,13 +23,13 @@ export default function Contact() {
         setCurrentPairIndex((prevIndex) => (prevIndex + 1) % pairedSlider.length)
     }
 
-    const { slide1, slide2 } = pairedSlider[currentPairIndex];
+    const { slide1, slide2, alt1, alt2 } = pairedSlider[currentPairIndex];
 
     return <section>
         <div>
-            <img src={slide1} alt="Pet" />
+            <img src={slide1} alt={alt1}/>
+            <img src={slide2} alt={alt2}/>
             <button type="button" onClick={nextPair} aria-label="Next images"><Play/></button> 
-            <img src={slide2} alt="Shpitz" />           
         </div>
         <div>
             <h2>Contact us</h2>
@@ -39,16 +39,10 @@ export default function Contact() {
             <p>Saturday 10:00-21:00</p>
 
             <address>
-                <ul>
-                    <li>
-                        <Location/>
-                        <a href="tel:+012-345-6789">+012-345-6789</a>
-                    </li>
-                    <li>
-                        <a href="mailto:TheWildKingdom@contact.com">TheWildKingdom@contact.com</a>
-                    </li>
-                    <li><a href="https://www.google.com/maps"></a>9889 Lorem Ipsum street, Pellentesque, CA, USA</li>
-                </ul>
+                <Location />
+                <p><a href="tel:+012-345-6789">+012-345-6789</a></p>
+                <p><a href="mailto:TheWildKingdom@contact.com">TheWildKingdom@contact.com</a></p>
+                <p><a href="https://www.google.com/maps" target="_blank">9889 Lorem Ipsum street, Pellentesque, CA, USA</a></p>
             </address>
             <button type="button">Contact</button>
         </div>
