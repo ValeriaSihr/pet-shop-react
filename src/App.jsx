@@ -6,7 +6,9 @@ import { HeroWrapper } from "./components/Hero/HeroWrapper.styled";
 import Products from "./components/Products/Products";
 import OurServices from "./components/OurServises/OurSevises";
 import Contact from "./components/Contact/Contact";
-import UsersComents from "./components/UsersComents/UsersComents";
+import UsersComments from "./components/UsersComments/UsersComments";
+import Footer from "./components/Footer/Footer";
+
 
 
 
@@ -23,8 +25,8 @@ function App() {
       <Products />
       <OurServices />
       <Contact />
-      <UsersComents/>
-      
+      <UsersComments/>
+      <Footer/>
 
       
       

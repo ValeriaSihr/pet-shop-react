@@ -13,12 +13,12 @@ const reviews = [
   { name: "Fusce Efficitur", text: "Sed blandit enim at fermentum fermentum. Sed commodo varius justo." },
 ]
 
-export default function UsersComents() {
+export default function UsersComments() {
    
     
     const [sliderRef, slider] = useKeenSlider({
         loop: true,
-        slydes: {
+        slides: {
             perView: 1,
         }
     })
