@@ -8,6 +8,7 @@ import OurServices from "./components/OurServises/OurSevises";
 import Contact from "./components/Contact/Contact";
 import UsersComments from "./components/UsersComments/UsersComments";
 import Footer from "./components/Footer/Footer";
+import Container from "./components/Container/Container";
 
 
 
@@ -17,19 +18,24 @@ function App() {
 
   return (
     <>
-     <HeroWrapper>
-      <Header />
-        <Hero />
-     </HeroWrapper>
-      <AboutUs />
-      <Products />
-      <OurServices />
-      <Contact />
-      <UsersComments/>
+    
+      <HeroWrapper>
+        
+          <Header />        
+          <Hero />
+          
+        </HeroWrapper>
+        
+      
+      <Container>
+        <AboutUs />
+        <Products />
+        <OurServices />
+        <Contact />
+        <UsersComments/>
+      </Container>
+      
       <Footer/>
-
-      
-      
     </>
   )
 }

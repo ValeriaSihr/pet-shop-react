@@ -12,8 +12,6 @@ import 'keen-slider/keen-slider.min.css';
 import * as SC from "./Hero.styled" 
 import Container from '../Container/Container';
 
-
-
 export default function Hero() {
   const [sliderRef] = useKeenSlider({
     loop: true,
@@ -49,10 +47,11 @@ export default function Hero() {
     ]
   )
 
-    return <SC.HeroSection>
-        <Container>
+  return (
+    <SC.HeroSection>
+      <Container>
         <SC.HeroParagraph>A better world for pets</SC.HeroParagraph>
-        <div ref={sliderRef} className="keen-slider">
+        <SC.KeenSliderContainer ref={sliderRef} className="keen-slider">
           <div className="keen-slider__slide">
             <img className="round-img" src={Pet1} alt="Black dog" />
           </div>
@@ -74,10 +73,8 @@ export default function Hero() {
           <div className="keen-slider__slide">
             <img className="round-img" src={Pet7} alt="Puppy" />
           </div>
-       
-        </div>
-
-      
+        </SC.KeenSliderContainer>
       </Container>
     </SC.HeroSection>
+  )
 }
