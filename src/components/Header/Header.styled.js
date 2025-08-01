@@ -13,17 +13,22 @@ export const LeftSection = styled.div`
   align-items: center;
 
   /* Mobile styles */
-  @media only screen and (max-width: 371px) {
+  @media screen and (min-width: 320px) and (max-width: 480px) {
     display: none;
   }
 
   /* Tablet styles */
-  @media only screen and (min-width: 372px) and (max-width: 1439px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    flex: 1;
+  }
+
+  /* Laptop styles */
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
     flex: 1;
   }
 
   /* Desktop styles */
-  @media only screen and (min-width: 1440px) {
+  @media screen and (min-width: 1281px) {
     flex: 1;
   }
 `;
@@ -34,19 +39,24 @@ export const CenterSection = styled.div`
   align-items: center;
 
   /* Mobile styles */
-  @media only screen and (max-width: 371px) {
+  @media screen and (min-width: 320px) and (max-width: 480px) {
     justify-content: flex-start;
-    
   }
 
   /* Tablet styles */
-  @media only screen and (min-width: 372px) and (max-width: 1439px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    flex: 1;
+    justify-content: center;
+  }
+
+  /* Laptop styles */
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
     flex: 1;
     justify-content: center;
   }
 
   /* Desktop styles */
-  @media only screen and (min-width: 1440px) {
+  @media screen and (min-width: 1281px) {
     flex: 1;
     justify-content: center;
   }
@@ -58,20 +68,27 @@ export const RightSection = styled.div`
   gap: 16px;
 
   /* Mobile styles */
-  @media only screen and (max-width: 371px) {
+  @media screen and (min-width: 320px) and (max-width: 480px) {
     gap: 8px;
     margin-right: 20px;
   }
 
   /* Tablet styles */
-  @media only screen and (min-width: 372px) and (max-width: 1439px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     flex: 1;
     justify-content: flex-end;
     gap: 12px;
   }
 
+  /* Laptop styles */
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
+    flex: 1;
+    justify-content: flex-end;
+    gap: 14px;
+  }
+
   /* Desktop styles */
-  @media only screen and (min-width: 1440px) {
+  @media screen and (min-width: 1281px) {
     flex: 1;
     justify-content: flex-end;
     gap: 16px;
@@ -88,7 +105,7 @@ export const MobileMenuButton = styled.button`
   margin-right: 20px;
 
   /* Mobile styles */
-  @media only screen and (max-width: 371px) {
+  @media screen and (min-width: 320px) and (max-width: 480px) {
     display: block;
   }
 `;

@@ -9,19 +9,25 @@ export const HeroSection = styled.section`
   align-items: center;
 
   /* Mobile styles */
-  @media only screen and (max-width: 371px) {
+  @media screen and (min-width: 320px) and (max-width: 480px) {
     margin-bottom: 80px;
     min-height: 400px;
   }
 
   /* Tablet styles */
-  @media only screen and (min-width: 372px) and (max-width: 1439px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     margin-bottom: 120px;
     min-height: 450px;
   }
 
+  /* Laptop styles */
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
+    margin-bottom: 140px;
+    min-height: 480px;
+  }
+
   /* Desktop styles */
-  @media only screen and (min-width: 1440px) {
+  @media screen and (min-width: 1281px) {
     margin-bottom: 167px;
     min-height: 500px;
   }
@@ -40,7 +46,7 @@ export const HeroParagraph = styled.p`
   line-height: 1.2;
 
   /* Mobile styles */
-  @media only screen and (max-width: 371px) {
+  @media screen and (min-width: 320px) and (max-width: 480px) {
     font-size: 2rem;
     width: 280px;
     left: 5%;
@@ -48,14 +54,21 @@ export const HeroParagraph = styled.p`
   }
 
   /* Tablet styles */
-  @media only screen and (min-width: 372px) and (max-width: 1439px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     font-size: 3rem;
     width: 350px;
     left: 8%;
   }
 
+  /* Laptop styles */
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
+    font-size: 3.5rem;
+    width: 380px;
+    left: 9%;
+  }
+
   /* Desktop styles */
-  @media only screen and (min-width: 1440px) {
+  @media screen and (min-width: 1281px) {
     font-size: 4.375rem;
     width: 440px;
     left: 10%;
@@ -93,7 +106,7 @@ export const KeenSliderContainer = styled.div`
   }
 
   /* Responsive styles for slider */
-  @media only screen and (max-width: 371px) {
+  @media screen and (min-width: 320px) and (max-width: 480px) {
     .keen-slider__slide {
       margin-bottom: 80px;
       top: 10px;
@@ -107,7 +120,7 @@ export const KeenSliderContainer = styled.div`
     }
   }
 
-  @media only screen and (min-width: 372px) and (max-width: 1439px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     .keen-slider__slide {
       margin-bottom: 120px;
       top: 15px;
@@ -121,7 +134,21 @@ export const KeenSliderContainer = styled.div`
     }
   }
 
-  @media only screen and (min-width: 1440px) {
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
+    .keen-slider__slide {
+      margin-bottom: 140px;
+      top: 18px;
+      left: 32%;
+    }
+    
+    .round-img {
+      width: 400px;
+      height: 400px;
+      padding: 7px;
+    }
+  }
+
+  @media screen and (min-width: 1281px) {
     .keen-slider__slide {
       margin-bottom: 156px;
       top: 20px;

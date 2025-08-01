@@ -10,21 +10,21 @@ export const HeroWrapper = styled.div`
   position: relative;
 
   /* Mobile styles */
-  @media only screen and (max-width: 767px) {
+  @media screen and (min-width: 320px) and (max-width: 480px) {
     min-height: 450px;
     background-size: cover;
     background-position: center;
   }
 
   /* Tablet styles */
-  @media only screen and (min-width: 768px) and (max-width: 1439px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     min-height: 550px;
     background-size: cover;
     background-position: center;
   }
 
   /* Desktop styles */
-  @media only screen and (min-width: 1440px) {
+  @media screen and (min-width: 1281px) {
     min-height: 600px;
     background-size: cover;
     background-position: center;

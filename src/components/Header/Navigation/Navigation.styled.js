@@ -7,7 +7,7 @@ export const Navigation = styled.nav`
   font-family: var(--font-family);
   
   /* Mobile styles */
-  @media only screen and (max-width: 371px) {
+  @media screen and (min-width: 320px) and (max-width: 480px) {
     display: none; 
   }
 `;
@@ -20,7 +20,7 @@ export const NavList = styled.ul`
   margin: 0;  
 
   /* Mobile styles */
-  @media only screen and (max-width: 371px) {
+  @media screen and (min-width: 320px) and (max-width: 480px) {
     flex-direction: column;
     gap: 10px;
     position: absolute;
@@ -34,18 +34,22 @@ export const NavList = styled.ul`
   }
 
   /* Tablet styles */
-  @media only screen and (min-width: 372px) and (max-width: 1439px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     gap: 15px;
   }
 
+  /* Laptop styles */
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
+    gap: 18px;
+  }
+
   /* Desktop styles */
-  @media only screen and (min-width: 1440px) {
+  @media screen and (min-width: 1281px) {
     gap: 20px;
   }
 `;
 
 export const NavItem = styled.li`
-  
   cursor: pointer;
   font-weight: 500;
   transition: color 0.3s ease;
@@ -55,7 +59,7 @@ export const NavItem = styled.li`
   }
 
   /* Mobile styles */
-  @media only screen and (max-width: 371px) {
+  @media screen and (min-width: 320px) and (max-width: 480px) {
     font-size: 1.1rem;
     padding: 10px 0;
     border-bottom: 1px solid #eee;
@@ -66,12 +70,17 @@ export const NavItem = styled.li`
   }
 
   /* Tablet styles */
-  @media only screen and (min-width: 372px) and (max-width: 1439px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     font-size: 0.95rem;
   }
 
+  /* Laptop styles */
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
+    font-size: 0.98rem;
+  }
+
   /* Desktop styles */
-  @media only screen and (min-width: 1440px) {
+  @media screen and (min-width: 1281px) {
     font-size: 1rem;
   }
 `;

@@ -26,7 +26,7 @@ export const HeadderButton = styled.button`
   }
 
   /* Mobile styles */
-  @media only screen and (max-width: 371px) {
+  @media screen and (min-width: 320px) and (max-width: 480px) {
     width: 80px;
     height: 35px;
     padding: 6px;
@@ -34,15 +34,23 @@ export const HeadderButton = styled.button`
   }
 
   /* Tablet styles */
-  @media only screen and (min-width: 372px) and (max-width: 1439px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     width: 90px;
     height: 38px;
     padding: 7px;
     font-size: 0.9rem;
   }
 
+  /* Laptop styles */
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
+    width: 95px;
+    height: 39px;
+    padding: 7.5px;
+    font-size: 0.95rem;
+  }
+
   /* Desktop styles */
-  @media only screen and (min-width: 1440px) {
+  @media screen and (min-width: 1281px) {
     width: 100px;
     height: 40px;
     padding: 8px;

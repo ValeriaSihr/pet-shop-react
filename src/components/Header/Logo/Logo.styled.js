@@ -32,7 +32,7 @@ export const Logo = styled.div`
   }
 
   /* Mobile styles */
-  @media only screen and (min-width: 371px) {
+  @media screen and (min-width: 320px) and (max-width: 480px) {
     font-size: 1.2rem;
     margin: 10px 20px 15px 20px;
     
@@ -42,7 +42,7 @@ export const Logo = styled.div`
   }
 
   /* Tablet styles */
-  @media only screen and (min-width: 372px) and (max-width: 1439px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     font-size: 1.5rem;
     margin: 15px 50px 20px 50px;
     
@@ -51,8 +51,18 @@ export const Logo = styled.div`
     }
   }
 
+  /* Laptop styles */
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
+    font-size: 1.7rem;
+    margin: 18px 80px 25px 80px;
+    
+    & svg {
+      max-width: 180px;
+    }
+  }
+
   /* Desktop styles */
-  @media only screen and (min-width: 1440px) {
+  @media screen and (min-width: 1281px) {
     font-size: 1.8rem;
     margin: 20px 100px 30px 100px;
     

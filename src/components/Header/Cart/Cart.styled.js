@@ -29,7 +29,7 @@ export const Cart = styled.div`
   }
 
   /* Mobile styles */
-  @media only screen and (max-width: 371px) {
+  @media screen and (min-width: 320px) and (max-width: 480px) {
     margin-left: 10px;
     width: 80px;
     height: 35px;
@@ -38,7 +38,7 @@ export const Cart = styled.div`
   }
 
   /* Tablet styles */
-  @media only screen and (min-width: 372px) and (max-width: 1439px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     margin-left: 30px;
     width: 95px;
     height: 38px;
@@ -46,8 +46,17 @@ export const Cart = styled.div`
     gap: 0.4rem;
   }
 
+  /* Laptop styles */
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
+    margin-left: 40px;
+    width: 100px;
+    height: 39px;
+    padding: 7.5px;
+    gap: 0.45rem;
+  }
+
   /* Desktop styles */
-  @media only screen and (min-width: 1440px) {
+  @media screen and (min-width: 1281px) {
     margin-left: 50px;
     width: 110px;
     height: 40px;
@@ -62,17 +71,22 @@ export const CartText = styled.p`
   margin: 0;
 
   /* Mobile styles */
-  @media only screen and (max-width: 371px) {
+  @media screen and (min-width: 320px) and (max-width: 480px) {
     font-size: 0.8rem;
   }
 
   /* Tablet styles */
-  @media only screen and (min-width: 372px) and (max-width: 1439px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     font-size: 0.85rem;
   }
 
+  /* Laptop styles */
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
+    font-size: 0.88rem;
+  }
+
   /* Desktop styles */
-  @media only screen and (min-width: 1440px) {
+  @media screen and (min-width: 1281px) {
     font-size: 0.9rem;
   }
 `;
@@ -83,19 +97,25 @@ export const CartCount = styled.span`
   font-size: 0.8rem;
 
   /* Mobile styles */
-  @media only screen and (max-width: 371px) {
+  @media screen and (min-width: 320px) and (max-width: 480px) {
     margin-left: 0.3rem;
     font-size: 0.7rem;
   }
 
   /* Tablet styles */
-  @media only screen and (min-width: 372px) and (max-width: 1439px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     margin-left: 0.4rem;
     font-size: 0.75rem;
   }
 
+  /* Laptop styles */
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
+    margin-left: 0.45rem;
+    font-size: 0.78rem;
+  }
+
   /* Desktop styles */
-  @media only screen and (min-width: 1440px) {
+  @media screen and (min-width: 1281px) {
     margin-left: 0.5rem;
     font-size: 0.8rem;
   }
@@ -106,17 +126,22 @@ export const CartImage = styled.img`
   color: var(--font-color);
 
   /* Mobile styles */
-  @media only screen and (max-width: 371px) {
+  @media screen and (min-width: 320px) and (max-width: 480px) {
     width: 18px;
   }
 
   /* Tablet styles */
-  @media only screen and (min-width: 372px) and (max-width: 1439px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     width: 20px;
   }
 
+  /* Laptop styles */
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
+    width: 21px;
+  }
+
   /* Desktop styles */
-  @media only screen and (min-width: 1440px) {
+  @media screen and (min-width: 1281px) {
     width: 22px;
   }
 `;
