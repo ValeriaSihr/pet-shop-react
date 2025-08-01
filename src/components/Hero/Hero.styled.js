@@ -48,9 +48,9 @@ export const HeroParagraph = styled.p`
   /* Mobile styles */
   @media screen and (min-width: 320px) and (max-width: 480px) {
     font-size: 2rem;
-    width: 280px;
-    left: 5%;
-    top: 40%;
+    width: 325px;
+    left: 10%;
+    top: 85%;
   }
 
   /* Tablet styles */
@@ -110,7 +110,7 @@ export const KeenSliderContainer = styled.div`
     .keen-slider__slide {
       margin-bottom: 80px;
       top: 10px;
-      left: 25%;
+      left: 20%;
     }
     
     .round-img {
