@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HeadderButton = styled.button`
+export const HeaderButton = styled.button`
   background-color: transparent;
   border: 0.5px solid var(--font-color);
   border-radius: 50px;

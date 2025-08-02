@@ -13,7 +13,7 @@ export const LeftSection = styled.div`
   align-items: center;
 
   /* Mobile styles */
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (min-width: 320px) and (max-width: 768px) {
     display: none;
   }
 
@@ -103,9 +103,11 @@ export const MobileMenuButton = styled.button`
   cursor: pointer;
   padding: 8px;
   margin-right: 20px;
+  z-index: 1001;
+  position: relative;
 
   /* Mobile styles */
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (min-width: 320px) and (max-width: 768px) {
     display: block;
   }
 `;
@@ -118,14 +120,17 @@ export const HamburgerIcon = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  
+
 
   span {
     display: block;
     width: 100%;
     height: 2px;
-    background-color: var(--font-color);
+    background-color: #9D875C;
     transition: all 0.3s ease;
     transform-origin: center;
+    will-change: transform, opacity;
   }
 
   ${({ isOpen }) => isOpen && `
@@ -148,24 +153,46 @@ export const MobileMenuOverlay = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1000;
+  z-index: 9999;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  padding-top: 80px;
+  align-items: center;
+  -webkit-overflow-scrolling: touch;
+  overflow: hidden;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
 `;
 
 // Mobile menu
 export const MobileMenu = styled.div`
-  background-color: var(--background-color, #fff);
+  background-color: rgb(245, 245, 220);
+  
   border-radius: 12px;
   padding: 30px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   min-width: 280px;
   max-width: 90%;
+  max-height: 80vh;  
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  overflow-y: auto;
+  margin: 20px;
+
+  /* Mobile styles */
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    min-width: 250px;
+    padding: 20px;
+    margin: 16px;
+  }
+
+  /* Tablet styles */
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    min-width: 300px;
+    padding: 25px;
+  }
 `;
 
 // Mobile navigation list
@@ -176,23 +203,34 @@ export const MobileNavList = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+ 
 `;
 
 // Mobile navigation item
 export const MobileNavItem = styled.li`
   font-size: 1.2rem;
-  font-weight: 500;
   padding: 15px 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #473600;
   cursor: pointer;
   transition: color 0.3s ease;
   text-align: center;
+  color: #473600;
+  -webkit-tap-highlight-color: transparent;
 
   &:last-child {
     border-bottom: none;
   }
 
   &:hover {
-    color: var(--accent-color, #f0e2a2);
+    color: #f0e2a2;
+  }
+
+  &:active {
+    color: #f0e2a2;
   }
 `;

@@ -110,7 +110,7 @@ export const KeenSliderContainer = styled.div`
     .keen-slider__slide {
       margin-bottom: 80px;
       top: 10px;
-      left: 20%;
+      left: 17%;
     }
     
     .round-img {

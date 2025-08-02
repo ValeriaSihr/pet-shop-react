@@ -1,8 +1,5 @@
 import * as SC from "./Cart.styled.js";
-import Svg from "../../../img/cart.svg"
-
-
-
+import Svg from "../../../img/cart.svg";
 
 export default function Cart() {
     return (
@@ -11,5 +8,5 @@ export default function Cart() {
             <SC.CartText>Cart</SC.CartText>
             <SC.CartCount>0</SC.CartCount>            
         </SC.Cart>
-    )
+    );
 }

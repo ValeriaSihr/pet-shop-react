@@ -4,7 +4,8 @@ import Button from "./Button/Button";
 import Cart from "./Cart/Cart";
 import Logo from "./Logo/Logo";
 import Navigation from "./Navigation/Navigation";
-import * as SC from "./Header.styled" 
+import * as SC from "./Header.styled";
+import { navigationItems } from "./navigationData";
 
 export default function Header() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -13,11 +14,17 @@ export default function Header() {
         setIsMobileMenuOpen(!isMobileMenuOpen);
     };
 
+    const handleNavItemClick = (itemName) => {
+        console.log(`Navigating to: ${itemName}`);
+        setIsMobileMenuOpen(false);
+        // Тут можна додати навігацію до відповідних сторінок
+    };
+
     return (
         <SC.Header>
             <Container>
                 <SC.LeftSection>
-                    <Navigation />
+                    <Navigation items={navigationItems} />
                 </SC.LeftSection>
                 <SC.CenterSection>
                     <Logo />
@@ -42,14 +49,29 @@ export default function Header() {
                 <SC.MobileMenuOverlay onClick={toggleMobileMenu}>
                     <SC.MobileMenu onClick={(e) => e.stopPropagation()}>
                         <SC.MobileNavList>
-                            <SC.MobileNavItem>Home</SC.MobileNavItem>
-                            <SC.MobileNavItem>About</SC.MobileNavItem>
-                            <SC.MobileNavItem>Product</SC.MobileNavItem>
-                            <SC.MobileNavItem>Services</SC.MobileNavItem>
+                            {navigationItems.map(item => (
+                                <SC.MobileNavItem 
+                                    key={item.id}
+                                    onClick={() => handleNavItemClick(item.name)}
+                                    onTouchEnd={() => handleNavItemClick(item.name)}
+                                >
+                                    {item.name}
+                                </SC.MobileNavItem>
+                            ))}
                         </SC.MobileNavList>
                     </SC.MobileMenu>
                 </SC.MobileMenuOverlay>
             )}
+            {/* Prevent body scroll when menu is open */}
+            {isMobileMenuOpen && (
+                <style jsx global>{`
+                    body {
+                        overflow: hidden;
+                        position: fixed;
+                        width: 100%;
+                    }
+                `}</style>
+            )}
         </SC.Header>
-    )
+    );
 }

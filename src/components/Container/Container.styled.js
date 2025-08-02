@@ -10,7 +10,7 @@ export const Container = styled.div`
   align-items: center;
 
   /* Mobile styles */
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (min-width: 320px) and (max-width: 768px) {
     max-width: 100%;
     padding: 0 12px;
     justify-content: space-between;
