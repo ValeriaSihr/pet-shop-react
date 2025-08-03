@@ -4,7 +4,7 @@ export const Header = styled.header`
   color: var(--font-color);
   font-family: var(--font-family); 
   position: relative;
-  display: flex;
+  
   
 `;
 
@@ -13,12 +13,12 @@ export const LeftSection = styled.div`
   align-items: center;
 
   /* Mobile styles */
-  @media screen and (min-width: 320px) and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 
   /* Tablet styles */
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
     flex: 1;
   }
 
@@ -41,12 +41,12 @@ export const CenterSection = styled.div`
   
 
   /* Mobile styles */
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     justify-content: flex-start;
   }
 
   /* Tablet styles */
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
     flex: 1;
     justify-content: center;
   }
@@ -70,13 +70,13 @@ export const RightSection = styled.div`
   gap: 16px;
 
   /* Mobile styles */
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     gap: 8px;
     margin-right: 20px;
   }
 
   /* Tablet styles */
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
     flex: 1;
     justify-content: flex-end;
     gap: 12px;
@@ -109,7 +109,7 @@ export const MobileMenuButton = styled.button`
   position: relative;
 
   /* Mobile styles */
-  @media screen and (min-width: 320px) and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     display: block;
   }
 `;
@@ -156,7 +156,7 @@ export const MobileMenuOverlay = styled.div`
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 9999;
   display: flex;
@@ -182,6 +182,7 @@ export const MobileMenu = styled.div`
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   overflow-y: auto;
+  scroll-behavior: smooth;
   margin: 20px;
   
   

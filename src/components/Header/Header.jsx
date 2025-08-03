@@ -53,7 +53,7 @@ export default function Header() {
           <Button />
         </SC.RightSection>
 
-        <SC.MobileMenuButton onClick={toggleMobileMenu}>
+        <SC.MobileMenuButton aria-label="Toggle menu" onClick={toggleMobileMenu}>
           <SC.HamburgerIcon isOpen={isMobileMenuOpen}>
             <span></span>
             <span></span>
