@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 export const Header = styled.header`
   color: var(--font-color);
-  font-family: var(--font-family);
-  width: 100%;
-  padding: 16px 0;
+  font-family: var(--font-family); 
   position: relative;
+  display: flex;
+  
 `;
 
 export const LeftSection = styled.div`
@@ -37,6 +37,8 @@ export const CenterSection = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  
+  
 
   /* Mobile styles */
   @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -163,13 +165,14 @@ export const MobileMenuOverlay = styled.div`
   -webkit-overflow-scrolling: touch;
   overflow: hidden;
   -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);                       
+                      
 `;
 
 // Mobile menu
 export const MobileMenu = styled.div`
-  background-color: rgb(245, 245, 220);
   
+  background-color: rgb(245, 245, 220);  
   border-radius: 12px;
   padding: 30px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
@@ -180,6 +183,9 @@ export const MobileMenu = styled.div`
   transform: translateZ(0);
   overflow-y: auto;
   margin: 20px;
+  
+  
+  
 
   /* Mobile styles */
   @media screen and (min-width: 320px) and (max-width: 480px) {

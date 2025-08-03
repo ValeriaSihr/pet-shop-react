@@ -93,7 +93,7 @@ export const CartText = styled.p`
 
 export const CartCount = styled.span`
   margin-left: 0.5rem;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 0.8rem;
 
   /* Mobile styles */

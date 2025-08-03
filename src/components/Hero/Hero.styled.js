@@ -7,6 +7,7 @@ export const HeroSection = styled.section`
   min-height: 500px;
   display: flex;
   align-items: center;
+  
 
   /* Mobile styles */
   @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -44,6 +45,7 @@ export const HeroParagraph = styled.p`
   width: 440px;
   font-weight: bold;
   line-height: 1.2;
+  
 
   /* Mobile styles */
   @media screen and (min-width: 320px) and (max-width: 480px) {

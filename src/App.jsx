@@ -8,7 +8,7 @@ import OurServices from "./components/OurServises/OurSevises";
 import Contact from "./components/Contact/Contact";
 import UsersComments from "./components/UsersComments/UsersComments";
 import Footer from "./components/Footer/Footer";
-import Container from "./components/Container/Container";
+
 
 
 
@@ -20,20 +20,15 @@ function App() {
     <>
     
       <HeroWrapper>
-        
           <Header />        
-          <Hero />
-          
-        </HeroWrapper>
-        
+          <Hero />   
+      </HeroWrapper>     
       
-      <Container>
         <AboutUs />
         <Products />
         <OurServices />
         <Contact />
-        <UsersComments/>
-      </Container>
+        <UsersComments/>      
       
       <Footer/>
     </>

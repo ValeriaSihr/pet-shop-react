@@ -1,15 +1,44 @@
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-
 :root {
   --color-primary-brand: #9D875C;
   --font-color: #C1AB81;
   --font-family: "Montserrat", sans-serif;
   --second-family: "Italiana", sans-serif;
+}
+
+/* ===== Reset Styles ===== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: "Italiana", "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  background-color: rgb(245, 245, 220);
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 h1,
@@ -26,7 +55,7 @@ p:last-child {
   margin-bottom: 0;
 }
 
-ul {
+ul, ol {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -37,106 +66,6 @@ a {
   text-decoration: none;
 }
 
-button {
-  cursor: pointer;
-}
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
 
-body {
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(245, 245, 220);
-  font-family: "Italiana", "Montserrat", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-
-}
-
-/* 
-.keen-slider__slide {
-  margin-bottom: 156px;
-  top: 20px;
-  left: 33%
-  
-
-}
-
-.keen-slider__slide:last-child {
-  margin-right: 0;
-}
-
-.keen-slider__slide{
-  width: 100%;
-  object-fit: cover;
-  border-radius: 12px;
- transform: translateX(-50%);
-  transition: transform 0.1s ease-in-out;
-  
-  
-}
-
-.round-img {
-  border-radius: 50%;
-  width: 500px;
-  height: 500px;
-  object-fit: cover;
-  border: 1px solid var(--color-primary-brand);
-  padding: 8px;
-  box-shadow: 0 2px 5px 5px rgba(0, 0, 0, 0.027);
-  
-} */
-
-/* Responsive styles for slider */
-/* @media only screen and (max-width: 372px) {
-  .keen-slider__slide {
-    margin-bottom: 80px;
-    top: 10px;
-    left: 25%;
-  }
-  
-  .round-img {
-    width: 250px;
-    height: 250px;
-    padding: 4px;
-  }
-}
-
-@media only screen and (min-width: 373px) and (max-width: 1439px) {
-  .keen-slider__slide {
-    margin-bottom: 120px;
-    top: 15px;
-    left: 30%;
-  }
-  
-  .round-img {
-    width: 350px;
-    height: 350px;
-    padding: 6px;
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  .keen-slider__slide {
-    margin-bottom: 156px;
-    top: 20px;
-    left: 33%;
-  }
-  
-  .round-img {
-    width: 500px;
-    height: 500px;
-    padding: 8px;
-  }
-} */
 
