@@ -4,7 +4,7 @@ export const Header = styled.header`
   color: var(--font-color);
   font-family: var(--font-family); 
   position: relative;
-  
+  margin-bottom: 20px;
   
 `;
 
@@ -165,7 +165,9 @@ export const MobileMenuOverlay = styled.div`
   -webkit-overflow-scrolling: touch;
   overflow: hidden;
   -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px);                       
+  backdrop-filter: blur(2px);
+  transition: all 0.3s ease-in-out;
+                      
                       
 `;
 
@@ -189,14 +191,14 @@ export const MobileMenu = styled.div`
   
 
   /* Mobile styles */
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (max-width: 768px)  {
     min-width: 250px;
     padding: 20px;
     margin: 16px;
   }
 
   /* Tablet styles */
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
     min-width: 300px;
     padding: 25px;
   }

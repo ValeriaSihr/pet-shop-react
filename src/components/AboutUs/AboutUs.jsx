@@ -10,8 +10,9 @@ export default function AboutUs() {
         
         <SC.AboutUsSection>
             <Container>
-            <img src={Yorik} alt="Yorcshire" />
+            <SC.AboutImage src={Yorik} alt="Yorcshire" />
              <div>
+              <div>
                 <h2>About Us</h2>
                 <h3>Treating pet like royalty</h3>
                 <p>“They’re not just pets, they’re family”</p>
@@ -19,12 +20,13 @@ export default function AboutUs() {
                 <button type="button">Explore</button>
              </div>
            
-            <ul>
-                <li><Food/></li>
-                <li><Care/></li>
-                <li><Accessories/></li>
-                </ul>
-                </Container>
+               <ul>
+                 <li><Food/></li>
+                 <li><Care/></li>
+                 <li><Accessories/></li>
+               </ul>
+            </div>
+            </Container>
      </SC.AboutUsSection>
  )   
 }

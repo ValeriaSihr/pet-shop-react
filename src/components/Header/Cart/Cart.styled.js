@@ -29,7 +29,7 @@ export const Cart = styled.div`
   }
 
   /* Mobile styles */
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (max-width: 768px)  {
     margin-left: 10px;
     width: 80px;
     height: 35px;
@@ -38,7 +38,7 @@ export const Cart = styled.div`
   }
 
   /* Tablet styles */
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
     margin-left: 30px;
     width: 95px;
     height: 38px;
@@ -71,12 +71,12 @@ export const CartText = styled.p`
   margin: 0;
 
   /* Mobile styles */
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (max-width: 768px)  {
     font-size: 0.8rem;
   }
 
   /* Tablet styles */
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
     font-size: 0.85rem;
   }
 
@@ -97,13 +97,13 @@ export const CartCount = styled.span`
   font-size: 0.8rem;
 
   /* Mobile styles */
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (max-width: 768px)  {
     margin-left: 0.3rem;
     font-size: 0.7rem;
   }
 
   /* Tablet styles */
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
     margin-left: 0.4rem;
     font-size: 0.75rem;
   }
@@ -126,12 +126,12 @@ export const CartImage = styled.img`
   color: var(--font-color);
 
   /* Mobile styles */
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (max-width: 768px)  {
     width: 18px;
   }
 
   /* Tablet styles */
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
     width: 20px;
   }
 

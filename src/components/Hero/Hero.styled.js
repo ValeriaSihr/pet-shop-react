@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HeroSection = styled.section`
   color: var(--color-primary-brand);
-  margin-bottom: 167px;
+  /* margin-bottom: 167px; */
   position: relative;
   min-height: 500px;
   display: flex;
@@ -11,25 +11,25 @@ export const HeroSection = styled.section`
 
   /* Mobile styles */
   @media screen and (min-width: 320px) and (max-width: 480px) {
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     min-height: 400px;
   }
 
   /* Tablet styles */
   @media screen and (min-width: 768px) and (max-width: 1024px) {
-    margin-bottom: 120px;
+    margin-bottom: 60px;
     min-height: 450px;
   }
 
   /* Laptop styles */
   @media screen and (min-width: 1025px) and (max-width: 1280px) {
-    margin-bottom: 140px;
+    margin-bottom: 70px;
     min-height: 480px;
   }
 
   /* Desktop styles */
   @media screen and (min-width: 1281px) {
-    margin-bottom: 167px;
+    margin-bottom: 80px;
     min-height: 500px;
   }
 `;

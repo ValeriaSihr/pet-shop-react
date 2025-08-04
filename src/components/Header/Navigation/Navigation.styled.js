@@ -7,7 +7,7 @@ export const Navigation = styled.nav`
   font-family: var(--font-family);
   
   /* Mobile styles */
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (max-width: 768px)  {
     display: none; 
   }
 `;
@@ -20,7 +20,7 @@ export const NavList = styled.ul`
   margin: 0;  
 
   /* Mobile styles */
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (max-width: 768px)  {
     flex-direction: column;
     gap: 10px;
     position: absolute;
@@ -34,7 +34,7 @@ export const NavList = styled.ul`
   }
 
   /* Tablet styles */
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
     gap: 15px;
   }
 
@@ -59,7 +59,7 @@ export const NavItem = styled.li`
   }
 
   /* Mobile styles */
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     font-size: 1.1rem;
     padding: 10px 0;
     border-bottom: 1px solid #eee;
@@ -70,7 +70,7 @@ export const NavItem = styled.li`
   }
 
   /* Tablet styles */
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
     font-size: 0.95rem;
   }
 
