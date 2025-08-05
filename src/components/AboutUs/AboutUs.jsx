@@ -6,8 +6,10 @@ import * as SC from "./AboutUs.styled"
 import Container from "../Container/Container";
 
 export default function AboutUs() {
+
+    
     return (
-        
+         
         <SC.AboutUsSection>
             <Container>
             <SC.AboutImage src={Yorik} alt="Yorcshire" />
@@ -17,28 +19,28 @@ export default function AboutUs() {
                 <SC.AboutSecondaryHeading>Treating pet like royalty</SC.AboutSecondaryHeading>
                 <SC.AbotParagraph1>“They’re not just pets, they’re family”</SC.AbotParagraph1>
                 <SC.AbotParagraph2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam mi id augue ultrices, in tempus elit tristique. Aliquam ultrices sem non.</SC.AbotParagraph2>
-                <button type="button">Explore</button>
+                <SC.AboutBtn type="button">Explore</SC.AboutBtn>
              </div>
            
                <SC.AboutList>
                         <SC.AboutItem>
                             <Food />
-                            
+                            <p>Pet Food</p>
                         </SC.AboutItem>
                         <SC.AboutItem>
                             <Care />
-                            
+                            <p>Pet Care</p>
                         </SC.AboutItem>
                         <SC.AboutItem>
                             <Accessories />
-                            
+                            <p>Pet Accessories</p>
                         </SC.AboutItem>
                     </SC.AboutList>
-                <ul>
-                    <li><p>Pet Food</p></li>
-                    <li><p>Pet Care</p></li>
-                    <li><p>Pet Accessories</p></li>
-                </ul>
+                {/* <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul> */}
             </div>
             </Container>
      </SC.AboutUsSection>

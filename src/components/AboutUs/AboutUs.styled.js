@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import GliterImg from "../../img/golden-glitter-background.png";
 
 export const AboutUsSection = styled.section`
 margin-bottom: 100px;
@@ -77,29 +78,87 @@ margin-bottom: 10px;
 
 export const AbotParagraph2 = styled.p`
 font-family: var(--font-family);
-margin-bottom: 10px;
+margin-bottom: 30px;
 `
 
-export const AboutList = styled.ul`
-display: flex;
-align-items: center;
-justify-content: space-between;
-margin: 0 20px;
+export const AboutBtn = styled.button`
+  position: relative;
+  left: 35%;
+  border: 0.5px solid var(--font-color);
+  border-radius: 50px;
+  background-image: url(${GliterImg});
+  filter: brightness(0.9);
+  color: #212121;  
+  padding: 8px;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;  
+  margin-bottom: 30px;
+
+ 
+  &:focus {
+    outline: none;
+    box-shadow: 0px 5px 10px 0px rgba(239, 225, 164, 0.7);
+  }
 `
+export const AboutList = styled.ul`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 20px;
+  gap: 40px;
+`;
 
 export const AboutItem = styled.li`
-border-radius: 50%;
-border: none;
-background-color: var(--font-color);
-width: 80px;
-height: 80px;
-padding: 10px;
-display: flex;
-align-items: center;
-justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 
-svg{
-  width: 50px;
-  height: 50px;   
-}
-`
+  svg {
+    width: 80px;
+    height: 80px;
+    background-color: var(--font-color);
+    background-image: url(${GliterImg});    
+    border-radius: 50%;
+    padding: 15px;
+    filter: brightness(0.9);
+  }
+
+  p {
+    margin: 0;
+    font-size: 13px;
+    text-align: center;
+  }
+`;
+
+// export const AboutList = styled.ul`
+// display: flex;
+// align-items: center;
+// justify-content: space-between;
+// margin: 0 20px;
+// gap: 40px;
+// `
+
+// export const AboutItem = styled.li`
+// border-radius: 50%;
+// border: none;
+// background-color: var(--font-color);
+// background-image: url(${GliterImg});
+// filter: brightness(0.9);
+// width: 80px;
+// height: 80px;
+// padding: 10px;
+// display: flex;
+// align-items: center;
+// justify-content: center;
+// flex-direction: column;
+
+
+// svg{
+//   width: 50px;
+//   height: 50px;
+// }
+// `
