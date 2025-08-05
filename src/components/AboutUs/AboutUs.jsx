@@ -13,18 +13,32 @@ export default function AboutUs() {
             <SC.AboutImage src={Yorik} alt="Yorcshire" />
              <div>
               <div>
-                <h2>About Us</h2>
-                <h3>Treating pet like royalty</h3>
-                <p>“They’re not just pets, they’re family”</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam mi id augue ultrices, in tempus elit tristique. Aliquam ultrices sem non.</p>
+                <SC.AboutMainHeading>About Us</SC.AboutMainHeading>
+                <SC.AboutSecondaryHeading>Treating pet like royalty</SC.AboutSecondaryHeading>
+                <SC.AbotParagraph1>“They’re not just pets, they’re family”</SC.AbotParagraph1>
+                <SC.AbotParagraph2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam mi id augue ultrices, in tempus elit tristique. Aliquam ultrices sem non.</SC.AbotParagraph2>
                 <button type="button">Explore</button>
              </div>
            
-               <ul>
-                 <li><Food/></li>
-                 <li><Care/></li>
-                 <li><Accessories/></li>
-               </ul>
+               <SC.AboutList>
+                        <SC.AboutItem>
+                            <Food />
+                            
+                        </SC.AboutItem>
+                        <SC.AboutItem>
+                            <Care />
+                            
+                        </SC.AboutItem>
+                        <SC.AboutItem>
+                            <Accessories />
+                            
+                        </SC.AboutItem>
+                    </SC.AboutList>
+                <ul>
+                    <li><p>Pet Food</p></li>
+                    <li><p>Pet Care</p></li>
+                    <li><p>Pet Accessories</p></li>
+                </ul>
             </div>
             </Container>
      </SC.AboutUsSection>
