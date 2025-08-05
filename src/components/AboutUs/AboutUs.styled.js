@@ -129,7 +129,7 @@ export const AboutItem = styled.li`
 
   p {
     margin: 0;
-    font-size: 13px;
+    font-size: 12px;
     text-align: center;
   }
 `;
