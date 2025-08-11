@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const HeroSection = styled.section`
   color: var(--color-primary-brand);
-  /* margin-bottom: 167px; */
   position: relative;
   min-height: 500px;
   display: flex;
@@ -49,7 +48,7 @@ export const HeroParagraph = styled.p`
 
   /* Mobile styles */
   @media screen and (min-width: 320px) and (max-width: 480px) {
-    font-size: 2rem;
+    font-size: 1.5rem;
     width: 325px;
     left: 10%;
     top: 85%;
@@ -86,11 +85,11 @@ export const KeenSliderContainer = styled.div`
   }
 
   .keen-slider__slide:last-child {
-    margin-right: 0;
+    margin-right: 100px;
   }
 
   .keen-slider__slide {
-    width: 100%;
+    width: 500px;
     object-fit: cover;
     border-radius: 12px;
     transform: translateX(-50%);
@@ -112,7 +111,7 @@ export const KeenSliderContainer = styled.div`
     .keen-slider__slide {
       margin-bottom: 80px;
       top: 10px;
-      left: 17%;
+      left: 10%;
     }
     
     .round-img {

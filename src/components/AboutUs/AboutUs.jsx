@@ -36,11 +36,7 @@ export default function AboutUs() {
                             <p>Pet Accessories</p>
                         </SC.AboutItem>
                     </SC.AboutList>
-                {/* <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul> */}
+                
             </div>
             </Container>
      </SC.AboutUsSection>
