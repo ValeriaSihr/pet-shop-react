@@ -8,6 +8,8 @@ import DogToy from "../../img/toy.jpg"
 import Bone from "../../img/threats.jpg"
 import DogBowls from "../../img/water_bowl.jpg"
 import products from "../../products.json"
+import * as SC from "./Products.styled.js";
+import Container from "../Container/Container.jsx"
 
 
 const images = {
@@ -22,12 +24,13 @@ const images = {
  }
 
 export default function Products() {
-    return <section>
-        <div>
-        <h2>Our products</h2>
-        <h3>For all your pet needs</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam odit sapiente ratione soluta quidem adipisci fuga unde porro rerum laborum, quia itaque!</p>
-        </div>
+    return <SC.ProductsSection>
+        <Container>
+        <SC.ProductsPrev>
+        <SC.ProductsHeading>Our products</SC.ProductsHeading>
+        <SC.ProdMainHeadding>For all your pet needs</SC.ProdMainHeadding>
+        <SC.ProdParagraph>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam odit sapiente ratione soluta quidem adipisci fuga unde porro rerum laborum, quia itaque!</SC.ProdParagraph>
+        </SC.ProductsPrev>
         <div>
             <ul>
                 {products.map(({ id, src, title, price, alt }) => (
@@ -41,6 +44,7 @@ export default function Products() {
                 
             </ul>
         </div>
-        <button type="submit">Explore</button>
-    </section>
+            <button type="submit">Explore</button>
+            </Container>
+    </SC.ProductsSection>
 }

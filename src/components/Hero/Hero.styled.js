@@ -65,7 +65,8 @@ export const HeroParagraph = styled.p`
   @media screen and (min-width: 1025px) and (max-width: 1280px) {
     font-size: 3.5rem;
     width: 380px;
-    left: 9%;
+    left: 15%;
+    bottom: 10%;
   }
 
   /* Desktop styles */

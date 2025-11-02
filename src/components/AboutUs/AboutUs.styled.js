@@ -2,10 +2,15 @@ import styled from "styled-components";
 import GliterImg from "../../img/golden-glitter-background.png";
 
 export const AboutUsSection = styled.section`
-margin-bottom: 100px;
+margin-bottom: 170px;
+height: 100%;
 
 
-  
+> div {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
 
   /* Tablet styles */
   @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -19,7 +24,7 @@ margin-bottom: 100px;
   
   /* Desktop styles */
   @media screen and (min-width: 1281px) {
-    
+    margin-bottom: 300px;
   }
 `
 
@@ -50,7 +55,7 @@ padding: 15px;
   @media screen and (min-width: 1024px) and (max-width: 1279px) {
     width: 400px;
     position: relative;
-    top: -80px;
+    top: 10px;
     right: 70px;
   }
 
@@ -63,6 +68,12 @@ padding: 15px;
   }
 `
 
+export const AboutUsContainer = styled.div`
+margin: 0 auto;
+padding: 20px;
+
+`
+
 export const AboutMainHeading = styled.h2`
 text-align: center;
 text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -71,11 +82,27 @@ font-family: var(--font-family);
 font-weight: 400;
 
 /* Tablet styles */
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
     text-align: start;
     margin-left: 50px;
     font-size: 0.8rem;
     
+  }
+
+  /* Laptop styles */
+  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+   margin-left: -30px;
+   text-align: start;
+    font-size: 0.8rem;
+
+
+  }
+
+  /* Desktop styles */
+  @media screen and (min-width: 1280px) {
+    margin-left: 30px;
+   text-align: start;
+    font-size: 0.8rem;
   }
 
 `
@@ -89,11 +116,25 @@ margin-bottom: 10px;
 text-align: center;
 
 /* Tablet styles */
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
     text-align: start;
     margin-left: 50px;
     font-size: 1.5rem;
     
+  }
+  /* Laptop styles */
+  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+   margin-left: -30px;
+   text-align: start;
+    font-size: 1.5rem;
+  }
+
+
+   /* Desktop styles */
+  @media screen and (min-width: 1280px) {
+    margin-left: 30px;
+   text-align: start;
+    font-size: 1.5rem;
   }
 
 `
@@ -104,11 +145,25 @@ margin-bottom: 10px;
 text-align: center;
 
 /* Tablet styles */
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
     text-align: start;
     margin-left: 50px;
     font-size: 0.7rem;
     
+  }
+
+  /* Laptop styles */
+  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+   margin-left: -30px;
+   text-align: start;
+    font-size: 0.8rem;
+  }
+
+   /* Desktop styles */
+  @media screen and (min-width: 1280px) {
+    margin-left: 30px;
+   text-align: start;
+    font-size: 0.8rem;
   }
 `
 
@@ -117,11 +172,31 @@ font-family: var(--font-family);
 margin-bottom: 30px;
 font-size: 1rem;
 text-align: center;
+
+
 /* Tablet styles */
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
     text-align: start;
     margin-left: 50px;
     font-size: 1rem;
+    
+  }
+
+  /* Laptop styles */
+  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+   margin-left: -30px;
+   
+   text-align: start;
+    font-size: 0.8rem;
+  }
+
+   /* Desktop styles */
+  @media screen and (min-width: 1280px) {
+  margin-left: 30px;
+  text-align: start;
+  font-size: 0.9rem;
+  width: 70%;
+    
     
   }
 
@@ -150,12 +225,20 @@ export const AboutBtn = styled.button`
   }
 
 
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
-    /* margin-right: 50px; */
-    right: 50%;
-   
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    left: 0;
+    margin-left: 50px;    
     
-    
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1279px){
+    left: 0;
+    margin-left: -30px;    
+  }
+
+  @media screen and (min-width: 1280px){
+    left: 0;
+    margin-left: 30px;
   }
 `
 export const AboutList = styled.ul`
@@ -165,9 +248,28 @@ export const AboutList = styled.ul`
   margin: 0 20px;
   gap: 40px;
 
-   @media screen and (min-width: 768px) and (max-width: 1024px) {
-    justify-content: space-between;
+   @media screen and (min-width: 768px) and (max-width: 1023px) {
+  
     margin: 0 -100px;
+  }
+
+  /* Laptop styles */
+  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+  position: relative;
+  right: 50px;
+  margin: 0 -100px;
+   
+  }
+
+  @media screen and (min-width: 1280px){
+   display: flex;
+    justify-content: space-around;
+    margin: 0 -200px;
+    gap: 90px;
+    position: relative;
+    top: 5rem;
+    right: 20rem;
+
   }
 `;
 
@@ -183,7 +285,6 @@ export const AboutItem = styled.li`
     background-color: var(--font-color);
     background-image: url(${GliterImg});    
     border-radius: 50%;
-
     padding: 15px;
     filter: brightness(0.9);
   }
@@ -214,6 +315,14 @@ export const AboutItem = styled.li`
    right: 150px;
   
     
+  }
+
+  @media screen and (min-width: 1280px){
+    svg{
+      width:100px;
+      height:100px;
+      padding: 30px;
+    }
   }
 `;
 

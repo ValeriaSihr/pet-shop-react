@@ -14,13 +14,13 @@ export default function AboutUs() {
             <Container>
             <SC.AboutImage src={Yorik} alt="Yorcshire" />
              <div>
-              <div>
+              <SC.AboutUsContainer>
                 <SC.AboutMainHeading>About Us</SC.AboutMainHeading>
                 <SC.AboutSecondaryHeading>Treating pet like royalty</SC.AboutSecondaryHeading>
                 <SC.AbotParagraph1>“They’re not just pets, they’re family”</SC.AbotParagraph1>
                 <SC.AbotParagraph2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam mi id augue ultrices, in tempus elit tristique. Aliquam ultrices sem non.</SC.AbotParagraph2>
                 <SC.AboutBtn type="button">Explore</SC.AboutBtn>
-             </div>
+             </SC.AboutUsContainer>
            
                <SC.AboutList>
                         <SC.AboutItem>

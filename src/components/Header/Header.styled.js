@@ -6,6 +6,12 @@ export const Header = styled.header`
   position: relative;
   margin-bottom: 20px;
   
+  /* Add flex layout to header since Container no longer has flex */
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 `;
 
 export const LeftSection = styled.div`
