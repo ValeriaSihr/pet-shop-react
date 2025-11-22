@@ -2,7 +2,7 @@ import styled from "styled-components";
 import GliterImg from "../../img/golden-glitter-background.png";
 
 export const AboutUsSection = styled.section`
-margin-bottom: 170px;
+margin-bottom: 100px;
 height: 100%;
 
 

@@ -31,19 +31,19 @@ export default function Products() {
         <SC.ProdMainHeadding>For all your pet needs</SC.ProdMainHeadding>
         <SC.ProdParagraph>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam odit sapiente ratione soluta quidem adipisci fuga unde porro rerum laborum, quia itaque!</SC.ProdParagraph>
         </SC.ProductsPrev>
-        <div>
-            <ul>
+        <SC.ProdContainer>
+            <SC.ProductList>
                 {products.map(({ id, src, title, price, alt }) => (
-                <li key={id}>
-                    <img src={images[src]} alt={alt} />
+                <SC.ProductItem key={id}>
+                    <SC.ProductImage src={images[src]} alt={alt} />
                     <h4>{title}</h4>
                     <p>{price} $</p>
                     <Star/>
-                </li>
+                </SC.ProductItem>
                 ))}
                 
-            </ul>
-        </div>
+            </SC.ProductList>
+        </SC.ProdContainer>
             <button type="submit">Explore</button>
             </Container>
     </SC.ProductsSection>
