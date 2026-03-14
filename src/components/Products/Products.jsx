@@ -1,6 +1,6 @@
 import Star from "../../img/stars.svg?react"
 import Bed from "../../img/bed.jpg"
-import CatFood from "../../img/one_bowl.jpg"
+import CatFood from "../../img/one_bowl1.png"
 import DogFood from "../../img/two_bowls.jpg"
 import Treats from "../../img/snack.jpg"
 import CatToy from "../../img/playing_cat.jpg"
@@ -9,7 +9,10 @@ import Bone from "../../img/threats.jpg"
 import DogBowls from "../../img/water_bowl.jpg"
 import products from "../../products.json"
 import * as SC from "./Products.styled.js";
-import Container from "../Container/Container.jsx"
+import Container from "../Container/Container.jsx";
+import { ProductsModal } from "./ProductsModal.jsx";
+import { useState } from "react";
+
 
 
 const images = {
@@ -21,9 +24,14 @@ const images = {
     DogToy,
     Bone,
     DogBowls,
- }
+}
+ 
+
 
 export default function Products() {
+
+    const [selectedProduct, setSelectedProduct] = useState(null);
+
     return <SC.ProductsSection>
         <Container>
         <SC.ProductsPrev>
@@ -34,8 +42,20 @@ export default function Products() {
         <SC.ProdContainer>
             <SC.ProductList>
                 {products.map(({ id, src, title, price, alt }) => (
-                <SC.ProductItem key={id}>
-                    <SC.ProductImage src={images[src]} alt={alt} />
+                    <SC.ProductItem key={id}
+                        onClick={() => setSelectedProduct({
+                            title,
+                            price,
+                            alt,
+                            img: images[src],
+                        })
+                        }>
+                        <SC.ImageWrapper>
+                            <SC.ProductImage src={images[src]} alt={alt} />
+                            <SC.Overlay>
+                                <button>Add to Cart</button>
+                            </SC.Overlay>
+                            </SC.ImageWrapper>
                     <h4>{title}</h4>
                     <p>{price} $</p>
                     <Star/>
@@ -45,6 +65,9 @@ export default function Products() {
             </SC.ProductList>
         </SC.ProdContainer>
             <button type="submit">Explore</button>
-            </Container>
+        </Container>
+        <ProductsModal product={selectedProduct}
+            onClose={() => setSelectedProduct(null)}
+        />
     </SC.ProductsSection>
 }

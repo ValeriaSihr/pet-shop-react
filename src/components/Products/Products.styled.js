@@ -35,6 +35,7 @@ padding-bottom: 20px;
 
 /* Tablet styles */
   @media screen and (min-width: 769px) and (max-width: 1024px) {
+    
   
   }
 
@@ -57,21 +58,48 @@ padding-bottom: 60px;
 width: 290px;
 `
 export const ProdContainer = styled.div`
+
 `
 
 export const ProductList = styled.ul`
-
+display: flex;
+flex-wrap: wrap;
 `
 export const ProductItem = styled.li`
-
-
+width: 50%;
+padding: 20px;
 
 `
+export const ImageWrapper = styled.div`
+
+`
+export const Overlay = styled.div`
+`
+
 
 export const ProductImage = styled.img`
 background-image: url(${GliterImg});
 background-repeat: no-repeat;
 background-size: cover;
 backdrop-filter: blur(5px);
+height: 150px;
+width: 150px;
+object-fit: cover;
+
+/* Tablet styles */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+      
+  
+  }
+
+  /* Laptop styles */
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
+    
+  }
+  
+  /* Desktop styles */
+  @media screen and (min-width: 1281px) {
+  
+  }
 
 `
