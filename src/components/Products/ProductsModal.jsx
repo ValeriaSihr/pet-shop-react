@@ -6,10 +6,11 @@ export function ProductsModal({ product, onClose }) {
     return (
         <SC.Backdrop onClick={onClose}>
             <SC.ModalContent onClick={(e) => e.stopPropagation()}>
+                <SC.CloseButton onClick={onClose}>X</SC.CloseButton>
                 <img src={product.img} alt={product.alt} />
                 <h3>{product.title}</h3>
                 <p>{product.price} $</p>
-                <button onClick={onClose}>Close</button>
+                <button>Add to Cart</button>
             </SC.ModalContent>
         </SC.Backdrop>
     )

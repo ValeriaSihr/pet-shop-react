@@ -21,8 +21,6 @@ text-transform: capitalize;
 font-weight: 400;
 padding-bottom: 20px;
 
- 
-
 `
 
 export const ProdMainHeadding = styled.h3`
@@ -62,18 +60,68 @@ export const ProdContainer = styled.div`
 `
 
 export const ProductList = styled.ul`
-display: flex;
-flex-wrap: wrap;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 20px;
+
+/* Tablet styles */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    grid-template-columns: repeat(3, 2fr);
+
+  }
+
+  /* Laptop styles */
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  /* Desktop styles */
+  @media screen and (min-width: 1281px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
 `
 export const ProductItem = styled.li`
-width: 50%;
 padding: 20px;
+display: flex;
+flex-direction: column;
+/* align-items: flex-start; */
 
+svg {
+  width: 100px;
+}
 `
 export const ImageWrapper = styled.div`
-
+position: relative;
+display: inline-block;
+border-radius: 5px;
+overflow: hidden;
 `
 export const Overlay = styled.div`
+position: absolute;
+inset: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: rgba(0, 0, 0, 0.45);
+opacity: 0;
+visibility: hidden;
+transition: opacity 250ms ease, visibility 250ms ease;
+
+button {
+  background-color: var(--color-primary-brand);
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  color: #fff;
+  cursor: pointer;
+}
+
+${ImageWrapper}:hover &,
+${ImageWrapper}:focus-within & {
+  opacity: 1;
+  visibility: visible;
+}
 `
 
 
@@ -81,10 +129,16 @@ export const ProductImage = styled.img`
 background-image: url(${GliterImg});
 background-repeat: no-repeat;
 background-size: cover;
-backdrop-filter: blur(5px);
-height: 150px;
-width: 150px;
+/* backdrop-filter: blur(5px); */
+/* filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5)); */
 object-fit: cover;
+border-radius: 5px;
+margin-bottom: 10px;
+height: 120px;
+width: 120px;
+padding: 10px;
+
+
 
 /* Tablet styles */
   @media screen and (min-width: 769px) and (max-width: 1024px) {

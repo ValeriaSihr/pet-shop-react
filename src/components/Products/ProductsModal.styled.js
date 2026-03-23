@@ -11,7 +11,7 @@ export const Backdrop = styled.div`
 `;
 
 export const ModalContent = styled.div`
-  background: #fff;
+  background:linear-gradient(#874E24, #D3A788);
   padding: 24px;
   border-radius: 12px;
   max-width: 90vw;
@@ -43,5 +43,15 @@ export const ModalContent = styled.div`
     color: #fff;
     border: none;
     border-radius: 6px;
+   
   }
 `;
+export const CloseButton = styled.button`
+   
+    padding: 8px 16px;
+    cursor: pointer;
+    background: var(--color-primary-brand, #9D875C);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+`
