@@ -55,9 +55,11 @@ export default function Products() {
                             <SC.Overlay>
                                 <button>Add to Cart</button>
                             </SC.Overlay>
-                            </SC.ImageWrapper>
-                    <h4>{title}</h4>
-                    <p>{price} $</p>
+                        </SC.ImageWrapper>
+                        <SC.ProdInfo>
+                            <SC.ProductsTitle>{title}</SC.ProductsTitle>
+                            <SC.ProductsPrice>{price} $</SC.ProductsPrice>
+                        </SC.ProdInfo>
                     <Star/>
                 </SC.ProductItem>
                 ))}

@@ -49,7 +49,7 @@ export const HeroParagraph = styled.p`
   /* Mobile styles */
   @media screen and (min-width: 320px) and (max-width: 480px) {
     font-size: 1.5rem;
-    width: 325px;
+    width: 250px;
     left: 10%;
     top: 85%;
   }
@@ -79,22 +79,17 @@ export const HeroParagraph = styled.p`
 
 // Keen Slider styles
 export const KeenSliderContainer = styled.div`
-  .keen-slider__slide {
-    margin-bottom: 156px;
-    top: 20px;
-    left: 33%;
-  }
-
-  .keen-slider__slide:last-child {
-    margin-right: 100px;
-  }
+  width: 100%;
+  overflow: hidden;
 
   .keen-slider__slide {
-    width: 500px;
+    width: 100%;
     object-fit: cover;
     border-radius: 12px;
-    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
     transition: transform 0.1s ease-in-out;
+    margin-bottom: 156px;
   }
 
   .round-img {
@@ -111,13 +106,11 @@ export const KeenSliderContainer = styled.div`
   @media screen and (min-width: 320px) and (max-width: 480px) {
     .keen-slider__slide {
       margin-bottom: 80px;
-      top: 10px;
-      left: 10%;
     }
     
     .round-img {
-      width: 250px;
-      height: 250px;
+      width: min(250px, calc(100vw - 48px));
+      height: min(250px, calc(100vw - 48px));
       padding: 4px;
     }
   }
@@ -125,8 +118,6 @@ export const KeenSliderContainer = styled.div`
   @media screen and (min-width: 768px) and (max-width: 1024px) {
     .keen-slider__slide {
       margin-bottom: 120px;
-      top: 15px;
-      left: 30%;
     }
     
     .round-img {
@@ -139,8 +130,6 @@ export const KeenSliderContainer = styled.div`
   @media screen and (min-width: 1025px) and (max-width: 1280px) {
     .keen-slider__slide {
       margin-bottom: 140px;
-      top: 18px;
-      left: 32%;
     }
     
     .round-img {
@@ -153,8 +142,6 @@ export const KeenSliderContainer = styled.div`
   @media screen and (min-width: 1281px) {
     .keen-slider__slide {
       margin-bottom: 156px;
-      top: 20px;
-      left: 33%;
     }
     
     .round-img {
