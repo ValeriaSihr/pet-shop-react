@@ -5,6 +5,21 @@ export const ProductsSection = styled.section`
 height: 100%;
 margin-bottom: 100px;
 
+/* Tablet styles */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    
+  
+  }
+
+  /* Laptop styles */
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
+    
+  }
+  
+  /* Desktop styles */
+  @media screen and (min-width: 1281px) {
+   
+  }
 `
 
 export const ProductsPrev = styled.div`
@@ -12,6 +27,22 @@ display: flex;
 align-items: center;
 justify-content: center;
 flex-direction: column;
+
+/* Tablet styles */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    
+  
+  }
+
+  /* Laptop styles */
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
+    
+  }
+  
+  /* Desktop styles */
+  @media screen and (min-width: 1281px) {
+   
+  }
 `
 
 export const ProductsHeading = styled.h2`
@@ -21,6 +52,21 @@ text-transform: capitalize;
 font-weight: 400;
 padding-bottom: 20px;
 
+/* Tablet styles */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    
+  
+  }
+
+  /* Laptop styles */
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
+    
+  }
+  
+  /* Desktop styles */
+  @media screen and (min-width: 1281px) {
+   
+  }
 `
 
 export const ProdMainHeadding = styled.h3`
@@ -54,9 +100,41 @@ font-size: 10px;
 text-align: center;
 padding-bottom: 40px;
 width: 290px;
+
+/* Tablet styles */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    
+  
+  }
+
+  /* Laptop styles */
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
+    
+  }
+  
+  /* Desktop styles */
+  @media screen and (min-width: 1281px) {
+   
+  }
 `
 export const ProdContainer = styled.div`
 margin-bottom: 30px;
+
+/* Tablet styles */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    
+  
+  }
+
+  /* Laptop styles */
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
+    
+  }
+  
+  /* Desktop styles */
+  @media screen and (min-width: 1281px) {
+   
+  }
 `
 
 export const ProductList = styled.ul`
@@ -92,13 +170,43 @@ justify-content: center;
 svg {
   width: 100px;
 }
+
+/* Tablet styles */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    
+  
+  }
+
+  /* Laptop styles */
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
+    
+  }
+  
+  /* Desktop styles */
+  @media screen and (min-width: 1281px) {
+   
+  }
 `
 export const ImageWrapper = styled.div`
 position: relative;
-/* display: inline-block; */
 border-radius: 5px;
 overflow: hidden;
 
+/* Tablet styles */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    
+  
+  }
+
+  /* Laptop styles */
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
+    
+  }
+  
+  /* Desktop styles */
+  @media screen and (min-width: 1281px) {
+   
+  }
 `
 export const Overlay = styled.div`
 position: absolute;
@@ -125,11 +233,26 @@ ${ImageWrapper}:focus-within & {
   opacity: 1;
   visibility: visible;
 }
+
+/* Tablet styles */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    
+  
+  }
+
+  /* Laptop styles */
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
+    
+  }
+  
+  /* Desktop styles */
+  @media screen and (min-width: 1281px) {
+   
+  }
 `
 
 
 export const ProductImage = styled.img`
-
 background-image: url(${GliterImg});
 background-repeat: no-repeat;
 background-size: contain;
@@ -164,6 +287,22 @@ display: flex;
 justify-content: space-between;
 gap: 30px;
 margin: 8px 0 8px 0;
+
+/* Tablet styles */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    
+  
+  }
+
+  /* Laptop styles */
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
+    
+  }
+  
+  /* Desktop styles */
+  @media screen and (min-width: 1281px) {
+   
+  }
 `
 
 export const ProductsTitle = styled.h4`
@@ -198,18 +337,21 @@ position: relative;
   }
 
 
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Tablet styles */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
     left: 0;
     margin-left: 50px;    
     
   }
 
-  @media screen and (min-width: 1024px) and (max-width: 1279px){
+  /* Laptop styles */
+  @media screen and (min-width: 1025px) and (max-width: 1280px){
     left: 0;
     margin-left: -30px;    
   }
 
-  @media screen and (min-width: 1280px){
+  /* Desktop styles */
+  @media screen and (min-width: 1281px){
     left: 0;
     margin-left: 30px;
   }`
