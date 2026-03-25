@@ -78,7 +78,7 @@ padding-bottom: 20px;
 
 
 /* Tablet styles */
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     
   
   }
@@ -102,7 +102,7 @@ padding-bottom: 40px;
 width: 290px;
 
 /* Tablet styles */
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     
   
   }
@@ -121,7 +121,7 @@ export const ProdContainer = styled.div`
 margin-bottom: 30px;
 
 /* Tablet styles */
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     
   
   }
@@ -143,7 +143,7 @@ grid-template-columns: repeat(2, 1fr);
 gap: 10px;
 
 /* Tablet styles */
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     grid-template-columns: repeat(2, 1fr);
 
   }
@@ -172,7 +172,7 @@ svg {
 }
 
 /* Tablet styles */
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     
   
   }
@@ -193,7 +193,7 @@ border-radius: 5px;
 overflow: hidden;
 
 /* Tablet styles */
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     
   
   }
@@ -235,7 +235,7 @@ ${ImageWrapper}:focus-within & {
 }
 
 /* Tablet styles */
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     
   
   }
@@ -266,7 +266,7 @@ width: 120px;
 
 
 /* Tablet styles */
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
       
   
   }
@@ -289,7 +289,7 @@ gap: 30px;
 margin: 8px 0 8px 0;
 
 /* Tablet styles */
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     
   
   }
@@ -338,7 +338,7 @@ position: relative;
 
 
   /* Tablet styles */
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     left: 0;
     margin-left: 50px;    
     

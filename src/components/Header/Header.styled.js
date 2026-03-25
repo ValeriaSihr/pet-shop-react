@@ -6,11 +6,11 @@ export const Header = styled.header`
   position: relative;
   margin-bottom: 20px;
   
-  /* Add flex layout to header since Container no longer has flex */
+  
   > div {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
   }
 `;
 
@@ -159,15 +159,13 @@ export const HamburgerIcon = styled.div`
 // Mobile menu overlay
 export const MobileMenuOverlay = styled.div`
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100%;
+  inset: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 9999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr;
+  padding: 16px;
   -webkit-overflow-scrolling: touch;
   overflow: hidden;
   -webkit-backdrop-filter: blur(2px);
@@ -179,33 +177,33 @@ export const MobileMenuOverlay = styled.div`
 
 // Mobile menu
 export const MobileMenu = styled.div`
-  
   background-color: rgb(245, 245, 220);  
   border-radius: 12px;
   padding: 30px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  min-width: 280px;
-  max-width: 90%;
+  /* min-width: 280px; */
+  max-width: 200px;
+  width: 100%;
   max-height: 80vh;  
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   overflow-y: auto;
   scroll-behavior: smooth;
-  margin: 20px;
+  margin: 0;
   
   
   
 
   /* Mobile styles */
   @media screen and (max-width: 768px)  {
-    min-width: 250px;
+    /* min-width: 250px; */
     padding: 20px;
-    margin: 16px;
+    margin: 0;
   }
 
   /* Tablet styles */
   @media screen and (min-width: 769px) and (max-width: 1024px) {
-    min-width: 300px;
+    /* min-width: 300px; */
     padding: 25px;
   }
 `;
