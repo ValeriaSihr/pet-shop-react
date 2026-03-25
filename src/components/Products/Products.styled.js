@@ -52,21 +52,21 @@ export const ProdParagraph = styled.p`
 font-family: var(--font-family);
 font-size: 10px;
 text-align: center;
-padding-bottom: 60px;
+padding-bottom: 40px;
 width: 290px;
 `
 export const ProdContainer = styled.div`
-
+margin-bottom: 30px;
 `
 
 export const ProductList = styled.ul`
 display: grid;
 grid-template-columns: repeat(2, 1fr);
-gap: 20px;
+gap: 10px;
 
 /* Tablet styles */
   @media screen and (min-width: 769px) and (max-width: 1024px) {
-    grid-template-columns: repeat(3, 2fr);
+    grid-template-columns: repeat(2, 1fr);
 
   }
 
@@ -82,10 +82,12 @@ gap: 20px;
 
 `
 export const ProductItem = styled.li`
-padding: 23px;
+padding: 10px;
 display: flex;
 flex-direction: column;
-/* align-items: flex-start; */
+align-items: center;
+justify-content: center;
+
 
 svg {
   width: 100px;
@@ -93,9 +95,10 @@ svg {
 `
 export const ImageWrapper = styled.div`
 position: relative;
-display: inline-block;
+/* display: inline-block; */
 border-radius: 5px;
 overflow: hidden;
+
 `
 export const Overlay = styled.div`
 position: absolute;
@@ -126,15 +129,16 @@ ${ImageWrapper}:focus-within & {
 
 
 export const ProductImage = styled.img`
+
 background-image: url(${GliterImg});
 background-repeat: no-repeat;
 background-size: contain;
 object-fit: cover;
 border-radius: 5px;
-margin-bottom: 10px;
+/* margin-bottom: 10px; */
 height: 120px;
 width: 120px;
-padding: 10px;
+/* padding: 8px; */
 
 
 
@@ -158,14 +162,54 @@ padding: 10px;
 export const ProdInfo = styled.div`
 display: flex;
 justify-content: space-between;
+gap: 30px;
 margin: 8px 0 8px 0;
-
 `
 
 export const ProductsTitle = styled.h4`
-font-size: 10px;
-
+font-size: 8px;
+width: 65px;
 `
 
 export const ProductsPrice = styled.p`
 font-size: 10px;`
+
+
+export const ProductsExplore = styled.button`
+position: relative;
+  left: 35%;
+  border: none;
+  border-radius: 50px;
+  background-image: url(${GliterImg});
+  filter: brightness(0.9);
+  color: #212121;  
+  padding: 8px;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;  
+  margin-bottom: 30px;
+
+ 
+  &:focus {
+    outline: none;
+    box-shadow: 0px 5px 10px 0px rgba(239, 225, 164, 0.7);
+  }
+
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    left: 0;
+    margin-left: 50px;    
+    
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1279px){
+    left: 0;
+    margin-left: -30px;    
+  }
+
+  @media screen and (min-width: 1280px){
+    left: 0;
+    margin-left: 30px;
+  }`

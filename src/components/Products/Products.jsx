@@ -53,7 +53,7 @@ export default function Products() {
                         <SC.ImageWrapper>
                             <SC.ProductImage src={images[src]} alt={alt} />
                             <SC.Overlay>
-                                <button>Add to Cart</button>
+                                <button type="button">Add to Cart</button>
                             </SC.Overlay>
                         </SC.ImageWrapper>
                         <SC.ProdInfo>
@@ -66,7 +66,7 @@ export default function Products() {
                 
             </SC.ProductList>
         </SC.ProdContainer>
-            <button type="submit">Explore</button>
+            <SC.ProductsExplore type="button">Explore</SC.ProductsExplore>
         </Container>
         <ProductsModal product={selectedProduct}
             onClose={() => setSelectedProduct(null)}
