@@ -7,11 +7,14 @@ export const Header = styled.header`
   margin-bottom: 20px;
   
   
+  
   > div {
     display: flex;
     align-items: center;
     justify-content: center;
+
   }
+
 `;
 
 export const LeftSection = styled.div`
@@ -19,12 +22,12 @@ export const LeftSection = styled.div`
   align-items: center;
 
   /* Mobile styles */
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 
   /* Tablet styles */
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     flex: 1;
   }
 
@@ -43,16 +46,18 @@ export const CenterSection = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  /* visibility: hidden; */
+
   
   
 
   /* Mobile styles */
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     justify-content: flex-start;
   }
 
   /* Tablet styles */
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     flex: 1;
     justify-content: center;
   }
@@ -76,13 +81,13 @@ export const RightSection = styled.div`
   gap: 16px;
 
   /* Mobile styles */
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     gap: 8px;
     margin-right: 20px;
   }
 
   /* Tablet styles */
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     flex: 1;
     justify-content: flex-end;
     gap: 12px;
@@ -115,7 +120,7 @@ export const MobileMenuButton = styled.button`
   position: relative;
 
   /* Mobile styles */
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: block;
   }
 `;
@@ -162,9 +167,6 @@ export const MobileMenuOverlay = styled.div`
   inset: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 9999;
-  display: grid;
-  place-items: center;
-  grid-template-columns: 1fr;
   padding: 16px;
   -webkit-overflow-scrolling: touch;
   overflow: hidden;
@@ -181,7 +183,6 @@ export const MobileMenu = styled.div`
   border-radius: 12px;
   padding: 30px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  /* min-width: 280px; */
   max-width: 200px;
   width: 100%;
   max-height: 80vh;  
@@ -195,14 +196,14 @@ export const MobileMenu = styled.div`
   
 
   /* Mobile styles */
-  @media screen and (max-width: 768px)  {
+  @media screen and (max-width: 767px)  {
     /* min-width: 250px; */
     padding: 20px;
     margin: 0;
   }
 
   /* Tablet styles */
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     /* min-width: 300px; */
     padding: 25px;
   }

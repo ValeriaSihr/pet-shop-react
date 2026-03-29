@@ -6,7 +6,7 @@ height: 100%;
 margin-bottom: 100px;
 
 /* Tablet styles */
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     
   
   }
@@ -29,7 +29,7 @@ justify-content: center;
 flex-direction: column;
 
 /* Tablet styles */
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     
   
   }
@@ -53,7 +53,7 @@ font-weight: 400;
 padding-bottom: 20px;
 
 /* Tablet styles */
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     
   
   }

@@ -9,7 +9,7 @@ export const HeroSection = styled.section`
   
 
   /* Mobile styles */
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 40px;
     min-height: 400px;
   }
@@ -47,7 +47,7 @@ export const HeroParagraph = styled.p`
   
 
   /* Mobile styles */
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     font-size: 1.5rem;
     width: 250px;
     left: 10%;
@@ -59,6 +59,7 @@ export const HeroParagraph = styled.p`
     font-size: 3rem;
     width: 350px;
     left: 8%;
+    /* bottom: 0; */
   }
 
   /* Laptop styles */
@@ -82,6 +83,7 @@ export const KeenSliderContainer = styled.div`
   width: 100%;
   overflow: hidden;
 
+
   .keen-slider__slide {
     width: 100%;
     object-fit: cover;
@@ -103,7 +105,7 @@ export const KeenSliderContainer = styled.div`
   }
 
   /* Responsive styles for slider */
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     .keen-slider__slide {
       margin-bottom: 80px;
     }
@@ -118,6 +120,8 @@ export const KeenSliderContainer = styled.div`
   @media screen and (min-width: 768px) and (max-width: 1024px) {
     .keen-slider__slide {
       margin-bottom: 120px;
+      width: 100%;
+      max-width: 350px;
     }
     
     .round-img {

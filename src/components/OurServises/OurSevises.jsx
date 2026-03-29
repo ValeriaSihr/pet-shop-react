@@ -4,6 +4,7 @@ import Services2 from "../../img/services2.jpg"
 import Services3 from "../../img/services3.jpg"
 import Services4 from "../../img/services4.jpg"
 import SvgBtn from "../../img/arrow.svg?react"
+import * as SC from "./OurServises.styled"
 
 const services = [
     { id: 1, src: Services1, alt: "Dog care", text: "Taking dogs care to the next level" },
@@ -14,9 +15,11 @@ const services = [
 
 export default function OurServices() {
     return (
-        <section>
-            <img src={FunnyCatPic} alt="Fluffy cat" />
+        <SC.SeviceSection>
             <div>
+
+            <img src={FunnyCatPic} alt="Fluffy cat" />
+            
                 <h2>Our services</h2>
                 <h3>Quality things for loving pets</h3>
                 <p>More than a Pet Store...</p>
@@ -34,6 +37,6 @@ export default function OurServices() {
                     ))}
                 </ul>
             </div>
-        </section>
+        </SC.SeviceSection>
     )
 }

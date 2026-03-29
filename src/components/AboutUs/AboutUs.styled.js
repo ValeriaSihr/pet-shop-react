@@ -14,7 +14,7 @@ height: 100%;
 
   /* Tablet styles */
   @media screen and (min-width: 768px) and (max-width: 1024px) {
-    
+    /* color: red; */
   }
 
   /* Laptop styles */
@@ -42,17 +42,16 @@ padding: 15px;
   }
 
   /* Tablet styles */
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     width: 350px;
     height: 100%;
     padding: 10px;
-    position: relative;
-    top: -100px;
+    
     
   }
 
   /* Laptop styles */
-  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
     width: 400px;
     position: relative;
     top: 10px;
@@ -61,7 +60,7 @@ padding: 15px;
 
 
 /* Desktop styles */
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1281px) {
     margin: 0 40px 0 20px;
     width: 600px;
     height: 400px;
@@ -70,7 +69,7 @@ padding: 15px;
 
 export const AboutUsContainer = styled.div`
 margin: 0 auto;
-padding: 20px;
+padding: 0 20px;
 
 `
 
@@ -82,7 +81,7 @@ font-family: var(--font-family);
 font-weight: 400;
 
 /* Tablet styles */
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     text-align: start;
     margin-left: 50px;
     font-size: 0.8rem;
@@ -90,7 +89,7 @@ font-weight: 400;
   }
 
   /* Laptop styles */
-  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
    margin-left: -30px;
    text-align: start;
     font-size: 0.8rem;
@@ -99,7 +98,7 @@ font-weight: 400;
   }
 
   /* Desktop styles */
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1281px) {
     margin-left: 30px;
    text-align: start;
     font-size: 0.8rem;
@@ -116,14 +115,14 @@ margin-bottom: 10px;
 text-align: center;
 
 /* Tablet styles */
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     text-align: start;
     margin-left: 50px;
     font-size: 1.5rem;
     
   }
   /* Laptop styles */
-  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
    margin-left: -30px;
    text-align: start;
     font-size: 1.5rem;
@@ -131,7 +130,7 @@ text-align: center;
 
 
    /* Desktop styles */
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1281px) {
     margin-left: 30px;
    text-align: start;
     font-size: 1.5rem;
@@ -145,7 +144,7 @@ margin-bottom: 10px;
 text-align: center;
 
 /* Tablet styles */
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     text-align: start;
     margin-left: 50px;
     font-size: 0.7rem;
@@ -153,14 +152,14 @@ text-align: center;
   }
 
   /* Laptop styles */
-  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
    margin-left: -30px;
    text-align: start;
     font-size: 0.8rem;
   }
 
    /* Desktop styles */
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1281px) {
     margin-left: 30px;
    text-align: start;
     font-size: 0.8rem;
@@ -175,7 +174,7 @@ text-align: center;
 
 
 /* Tablet styles */
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     text-align: start;
     margin-left: 50px;
     font-size: 1rem;
@@ -183,7 +182,7 @@ text-align: center;
   }
 
   /* Laptop styles */
-  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
    margin-left: -30px;
    
    text-align: start;
@@ -191,7 +190,7 @@ text-align: center;
   }
 
    /* Desktop styles */
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1281px) {
   margin-left: 30px;
   text-align: start;
   font-size: 0.9rem;
@@ -225,18 +224,18 @@ export const AboutBtn = styled.button`
   }
 
 
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     left: 0;
     margin-left: 50px;    
     
   }
 
-  @media screen and (min-width: 1024px) and (max-width: 1279px){
+  @media screen and (min-width: 1025px) and (max-width: 1280px){
     left: 0;
     margin-left: -30px;    
   }
 
-  @media screen and (min-width: 1280px){
+  @media screen and (min-width: 1281px){
     left: 0;
     margin-left: 30px;
   }
@@ -248,20 +247,20 @@ export const AboutList = styled.ul`
   margin: 0 20px;
   gap: 40px;
 
-   @media screen and (min-width: 768px) and (max-width: 1023px) {
+   @media screen and (min-width: 768px) and (max-width: 1024px) {
   
     margin: 0 -100px;
   }
 
   /* Laptop styles */
-  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
   position: relative;
   right: 50px;
   margin: 0 -100px;
    
   }
 
-  @media screen and (min-width: 1280px){
+  @media screen and (min-width: 1281px){
    display: flex;
     justify-content: space-around;
     margin: 0 -200px;

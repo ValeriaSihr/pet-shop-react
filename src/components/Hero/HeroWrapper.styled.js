@@ -10,7 +10,7 @@ export const HeroWrapper = styled.div`
   position: relative;
 
   /* Mobile styles */
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     min-height: 450px;
     background-size: cover;
     background-position: center;
